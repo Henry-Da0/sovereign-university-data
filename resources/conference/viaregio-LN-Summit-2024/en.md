@@ -12,17 +12,17 @@ description: Private Lightning event for builder
 
 Speaker: Steve Lee
 
-## Add Lightning to your app using the Breez SDK
+## XXX
 
-![video](https://youtu.be/jyRKzXyTB_w)
+![video](https://youtu.be/0Aq1ANhKV0E)
 
-Speaker: Ross Savage 
+Speaker: Steve Lee
 
 ## Building the next-gen Lightning wallet 
 
-![video](https://youtu.be/fOKHMsBxRAQ)
+![video](https://youtu.be/0Aq1ANhKV0E)
 
-Speaker: Andrei Ivanitskii
+Speaker: Steve Lee
 
 ## Bitcoin usability for the masses 
 
