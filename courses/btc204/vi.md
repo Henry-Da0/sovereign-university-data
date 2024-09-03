@@ -1,104 +1,105 @@
 ---
-name: Bảo vệ Quyền Riêng tư trên Bitcoin
+name: Bảo vệ quyền riêng tư trong thế giới Bitcoin
 goal: Hiểu và thành thạo các nguyên tắc bảo vệ quyền riêng tư khi sử dụng Bitcoin
 objectives:
   - Định nghĩa các khái niệm lý thuyết cần thiết để hiểu rõ vấn đề bảo vệ quyền riêng tư
-  - Biết cách nhận diện và giảm thiểu rủi ro liên quan đến việc mất quyền riêng tư của người dùng trên Bitcoin
-  - Sử dụng các phương pháp và công cụ để bảo vệ quyền riêng tư của bạn trên Bitcoin
-  - Hiểu các phương pháp phân tích chuỗi và phát triển chiến lược phòng thủ
+  - Biết cách nhận diện và giảm thiểu rủi ro liên quan đến việc mất quyền riêng tư của người dùng trong không gian Bitcoin
+  - Sử dụng các phương pháp và công cụ để bảo vệ quyền riêng tư của bạn trong không gian Bitcoin
+  - Hiểu các phương pháp phân tích chuỗi và phát triển các chiến lược phòng thủ
 ---
 
-# Bảo Vệ Quyền Riêng Tư Của Bạn Trên Bitcoin
+# Bảo vệ quyền riêng tư của bạn trong thế giới Bitcoin
 
-Trong một thế giới mà quyền riêng tư của các giao dịch tài chính dần trở thành một thứ xa xỉ, việc hiểu và thành thạo các nguyên tắc bảo vệ quyền riêng tư trong việc sử dụng Bitcoin của bạn là điều cần thiết. Khóa học này cung cấp cho bạn tất cả các chìa khóa, cả lý thuyết và thực hành, để đạt được điều này một cách tự chủ.
+Trong một thế giới mà quyền riêng tư của các giao dịch tài chính dần trở thành một thứ xa xỉ, bạn cẩn phải hiểu và thành thạo các nguyên tắc bảo vệ quyền riêng tư trong việc sử dụng Bitcoin của mình, vì đây là điều rất cần thiết. Khóa học này sẽ cung cấp tất cả các chìa khóa, cả lý thuyết lẫn thực hành, để bạn có thể đạt được điều này một cách tự chủ.
 
-Ngày nay, trên Bitcoin, có các công ty chuyên về phân tích chuỗi. Lĩnh vực kinh doanh cốt lõi của họ chính xác là xâm nhập vào không gian riêng tư của bạn, nhằm xâm phạm bảo mật của các giao dịch của bạn. Thực tế, "quyền riêng tư" trên Bitcoin không tồn tại. Do đó, chính bạn, người dùng, phải khẳng định quyền tự nhiên của mình và bảo vệ bảo mật của các giao dịch của bạn, bởi vì không ai khác sẽ làm điều đó cho bạn.
+Ngày nay, trong hệ sinh thái Bitcoin, có các công ty chuyên về phân tích chuỗi. Lĩnh vực kinh doanh cốt lõi của họ chính xác là xâm nhập vào không gian riêng tư của bạn, nhằm xâm phạm tính bảo mật trong các giao dịch của bạn. Thực tế, "quyền riêng tư" trên Bitcoin không tồn tại. Do đó, chính bạn, người dùng, phải khẳng định quyền tự nhiên của mình và bảo vệ tính bảo mật trong các giao dịch của mình. Không ai khác sẽ làm điều đó cho bạn.
 
-Khóa học này được trình bày như một hành trình hoàn chỉnh và tổng quát. Mỗi khái niệm kỹ thuật được chi tiết hóa và hỗ trợ bằng các sơ đồ giải thích. Mục tiêu là làm cho kiến thức trở nên dễ tiếp cận với mọi người. BTC204 do đó phù hợp cho cả người mới bắt đầu và người dùng trung gian. Khóa học này cũng mang lại giá trị gia tăng cho những người dùng Bitcoin kỳ cựu, khi chúng tôi đi sâu vào một số khái niệm kỹ thuật thường không được biết đến.
+Khóa học này được trình bày như một hành trình hoàn chỉnh và tổng quát. Mỗi khái niệm kỹ thuật được chi tiết hóa và hỗ trợ bằng các sơ đồ minh hoạ. Mục tiêu là làm cho kiến thức trở nên dễ tiếp cận với mọi người. BTC204 do đó phù hợp cho cả người mới bắt đầu và người dùng ở trình độ trung cấp, đã có kinh nghiệm tương đối với Bitcoin. Khóa học này cũng mang lại giá trị cộng thêm cho đại đa số các Bitcoiner kỳ cựu, do chúng tôi đào sâu vào một số khái niệm kỹ thuật thường không được biết đến.
 
-Tham gia cùng chúng tôi để biến đổi cách sử dụng Bitcoin của bạn và trở thành một người dùng thông thái, có khả năng hiểu các vấn đề xung quanh bảo mật và bảo vệ quyền riêng tư của bạn.
+Tham gia cùng chúng tôi để nâng cấp cách sử dụng Bitcoin của bản thân và trở thành một người dùng thông thái, có khả năng hiểu các vấn đề xung quanh bảo mật và bảo vệ quyền riêng tư của mình.
 
 +++
 
-# Giới Thiệu
+# Giới thiệu
 <partId>e17474a8-8899-4bdb-a7f8-bc52ddb01440</partId>
 
-## Giới Thiệu về Khóa Học
+## Giới thiệu về khóa học
 <chapterId>08ba1933-f393-4fb5-8279-777d874caedb</chapterId>
 
-Trong một thế giới mà quyền riêng tư của các giao dịch tài chính dần trở thành một thứ xa xỉ, việc hiểu và thành thạo các nguyên tắc bảo vệ quyền riêng tư trong việc sử dụng Bitcoin của bạn là điều cần thiết. Khóa học này cung cấp cho bạn tất cả các chìa khóa, cả lý thuyết và thực hành, để đạt được điều này một cách tự chủ.
-Ngày nay, trong hệ sinh thái Bitcoin, có các công ty chuyên về phân tích chuỗi. Lĩnh vực kinh doanh cốt lõi của họ chính xác là xâm nhập vào không gian riêng tư của bạn, xâm phạm bảo mật của các giao dịch của bạn. Trên thực tế, "quyền riêng tư" trên Bitcoin không tồn tại. Do đó, chính bạn, người dùng, phải khẳng định quyền tự nhiên của mình và bảo vệ bảo mật của các giao dịch của bạn, bởi vì không ai khác sẽ làm điều đó cho bạn.
+Trong một thế giới mà quyền riêng tư của các giao dịch tài chính dần trở thành một thứ xa xỉ, bạn cẩn phải hiểu và thành thạo các nguyên tắc bảo vệ quyền riêng tư trong việc sử dụng Bitcoin của mình, vì đây là điều rất cần thiết. Khóa học này sẽ cung cấp tất cả các chìa khóa, cả lý thuyết lẫn thực hành, để bạn có thể đạt được điều này một cách tự chủ.
 
-Bitcoin không chỉ tồn tại với mục đích "Giá Tăng" và bảo toàn giá trị tiết kiệm. Do những đặc tính và lịch sử độc đáo của nó, nó chủ yếu là công cụ của nền kinh tế ngầm. Nhờ phát minh đáng chú ý này, bạn có thể tự do quản lý tiền của mình, chi tiêu và tích lũy nó, mà không ai có thể ngăn cản bạn.
+Ngày nay, trong hệ sinh thái Bitcoin, có các công ty chuyên về phân tích chuỗi. Lĩnh vực kinh doanh cốt lõi của họ chính xác là xâm nhập vào không gian riêng tư của bạn, nhằm xâm phạm tính bảo mật trong các giao dịch của bạn. Thực tế, "quyền riêng tư" trên Bitcoin không tồn tại. Do đó, chính bạn, người dùng, phải khẳng định quyền tự nhiên của mình và bảo vệ tính bảo mật trong các giao dịch của mình. Không ai khác sẽ làm điều đó cho bạn.
 
-Bitcoin cung cấp một lối thoát bình yên khỏi ách thống trị của các quốc gia, cho phép bạn tận hưởng trọn vẹn quyền tự nhiên của mình, không thể bị thách thức bởi các luật lệ đã được thiết lập. Nhờ phát minh của Satoshi Nakamoto, bạn có quyền thực thi sự tôn trọng đối với tài sản riêng tư của mình và lấy lại tự do ký kết hợp đồng.
+Bitcoin không chỉ tồn tại với mục đích "Giá Tăng - Number Go Up - NGU" và bảo toàn giá trị khoản tiết kiệm. Do những đặc tính và lịch sử độc đáo của nó, nó chủ yếu là công cụ của nền kinh tế ngầm. Nhờ phát minh đáng chú ý này, bạn có thể tự do quản lý tiền của mình, chi tiêu và tích lũy nó, mà không ai có thể ngăn cản bạn.
 
-Tuy nhiên, Bitcoin không ẩn danh theo mặc định, điều này có thể tạo ra rủi ro cho các cá nhân tham gia vào nền kinh tế ngầm, đặc biệt là ở các khu vực dưới chế độ độc tài. Nhưng đó không phải là nguy hiểm duy nhất. Do bitcoin là một tài sản có giá trị và không thể kiểm duyệt, nó có thể thu hút sự chú ý của kẻ trộm. Do đó, bảo vệ quyền riêng tư của bạn cũng trở thành một vấn đề an ninh: nó có thể giúp bạn ngăn chặn các cuộc tấn công mạng và hành vi tấn công vật lý.
-Như chúng ta sẽ thấy, mặc dù giao thức cung cấp một số bảo vệ riêng tư cố hữu, việc sử dụng các công cụ bổ sung để tối ưu hóa và bảo vệ quyền riêng tư này là rất quan trọng. Khóa học này được thiết kế như một khóa học tổng quát và toàn diện để hiểu về các vấn đề liên quan đến quyền riêng tư trên Bitcoin. Mỗi khái niệm kỹ thuật được thảo luận chi tiết và được hỗ trợ bằng các sơ đồ giải thích. Mục tiêu là làm cho kiến thức trở nên dễ tiếp cận với mọi người, kể cả người mới bắt đầu và người dùng ở trình độ trung bình. Đối với những người dùng Bitcoin có kinh nghiệm hơn, chúng tôi cũng đề cập đến các khái niệm kỹ thuật rất chi tiết và đôi khi ít được biết đến trong suốt khóa học này để làm sâu sắc thêm sự hiểu biết về từng chủ đề.
+Bitcoin mang lại một lối thoát bình yên khỏi ách thống trị của các quốc gia, cho phép bạn tận hưởng trọn vẹn quyền tự nhiên của mình, không thể bị thách thức bởi các luật lệ hiện hành. Nhờ phát minh của Satoshi Nakamoto, bạn có quyền lực để thực thi quyền riêng tư về tài sản và lấy lại quyền tự do giao kết hợp đồng.
 
-Mục tiêu của khóa học này không phải là làm cho bạn hoàn toàn ẩn danh trong việc sử dụng Bitcoin, mà là cung cấp cho bạn các công cụ cần thiết để biết cách bảo vệ quyền riêng tư của mình theo mục tiêu cá nhân. Bạn sẽ có tự do lựa chọn từ các khái niệm và công cụ được trình bày để phát triển chiến lược riêng của mình, phù hợp với mục tiêu và nhu cầu cụ thể của bạn.
+Tuy nhiên, Bitcoin không mặc định ẩn danh, điều này có thể tạo ra rủi ro cho các cá nhân tham gia vào nền kinh tế ngầm, đặc biệt là ở các khu vực đang sống dưới các chế độ độc tài. Nhưng đó không phải là điều nguy hiểm duy nhất. Do bitcoin là một tài sản có giá trị và không thể kiểm duyệt, nó có thể thu hút sự chú ý của kẻ trộm. Do đó, bảo vệ quyền riêng tư của bạn cũng trở thành một vấn đề an ninh: nó có thể giúp bạn ngăn chặn các cuộc tấn công mạng và hành vi tấn công vật lý ngoài đời thực.
+Như chúng ta sẽ thấy, mặc dù bản thân giao thức Bitcoin mang lại một số tính năng bảo vệ sự riêng tư, điều quan trọng là chúng ta phải biết sử dụng các công cụ bổ sung để tối ưu hóa và bảo vệ quyền riêng tư này. Khóa học này được thiết kế như một khóa học tổng quát và toàn diện để hiểu về các vấn đề liên quan đến quyền riêng tư trong không gian Bitcoin. Mỗi khái niệm kỹ thuật được thảo luận chi tiết và được hỗ trợ bằng các sơ đồ minh hoạ. Mục tiêu của chúng tôi là giúp cho kiến thức trở nên dễ tiếp cận với mọi người, kể cả người mới bắt đầu và người dùng ở trình độ trung bình. Đối với những người dùng Bitcoin có kinh nghiệm hơn, trong suốt khoá học này, chúng tôi cũng đề cập đến các khái niệm kỹ thuật rất chi tiết và đôi khi ít được biết đến để làm sâu sắc thêm sự hiểu biết về từng chủ đề.
 
-### Phần 1: Định Nghĩa và Khái Niệm Chính
-Để bắt đầu, chúng ta sẽ cùng nhau xem xét các nguyên tắc cơ bản điều khiển hoạt động của Bitcoin, để sau đó có thể bình tĩnh tiếp cận các khái niệm liên quan đến quyền riêng tư. Việc nắm vững một số khái niệm cơ bản như UTXOs, địa chỉ nhận, hoặc scripts, trước khi có thể hoàn toàn hiểu các khái niệm mà chúng tôi sẽ đề cập trong các phần tiếp theo là rất quan trọng. Chúng tôi cũng sẽ giới thiệu mô hình tổng quát về quyền riêng tư Bitcoin, như được Satoshi Nakamoto tưởng tượng, điều này sẽ cho phép chúng ta nắm bắt được các vấn đề và rủi ro liên quan.
+Mục tiêu của khóa học này không phải là làm cho bạn trở nên hoàn toàn ẩn danh trong việc sử dụng Bitcoin, mà là cung cấp cho bạn các công cụ cần thiết để biết cách bảo vệ quyền riêng tư của mình theo mục tiêu cá nhân. Bạn toàn quyền tự do lựa chọn từ các khái niệm và công cụ được đưa ra ở đây để phát triển chiến lược riêng của mình, phù hợp với mục tiêu và nhu cầu cụ thể của bản thân.
+
+### Phần 1: Các định nghĩa và khái niệm chính
+Để bắt đầu, chúng ta sẽ cùng nhau xem kỹ lại các nguyên tắc cơ bản quản trị sự vận hành của Bitcoin, để sau đó có thể tiếp cận dần với các khái niệm liên quan đến quyền riêng tư. Việc nắm vững một số khái niệm cơ bản như UTXOs, địa chỉ nhận, hoặc scripts rất quan trọng, vì điều đó sẽ giúp bạn có thể hiểu trọn vẹn các khái niệm mà chúng tôi sẽ đề cập trong các phần tiếp theo. Chúng tôi cũng sẽ giới thiệu mô hình tổng quát về quyền riêng tư trong không gian Bitcoin, theo cách Satoshi Nakamoto hình dung, điều này sẽ cho phép chúng ta nắm bắt được các vấn đề và rủi ro liên quan.
 ![BTC204](assets/vi/11/1.webp)
 
-### Phần 2: Hiểu về Phân Tích Chuỗi và Cách Bảo Vệ Khỏi Nó
+### Phần 2: Hiểu về phân tích chuối và các bảo vệ quyền riêng tư trước hoạt động này
 
-Trong phần thứ hai, chúng tôi nghiên cứu các kỹ thuật được sử dụng bởi các công ty phân tích chuỗi để truy vết hoạt động của bạn trên Bitcoin. Việc hiểu biết những phương pháp này là rất quan trọng để tăng cường bảo vệ quyền riêng tư của bạn. Phần này nhằm xem xét các chiến lược của kẻ tấn công để hiểu rõ hơn về các rủi ro và đặt nền móng cho các kỹ thuật mà chúng tôi sẽ nghiên cứu trong các phần tiếp theo. Chúng tôi sẽ phân tích các mẫu giao dịch, heuristics nội bộ và bên ngoài, cũng như các giải thích hợp lý của những mẫu này. Ngoài một thành phần lý thuyết, chúng tôi sẽ học cách sử dụng một trình duyệt khối để thực hiện phân tích chuỗi, thông qua các ví dụ và bài tập thực hành.
+Trong phần thứ hai, chúng ta sẽ nghiên cứu các kỹ thuật được sử dụng bởi các công ty phân tích chuỗi để truy vết hoạt động của bạn trên mạng lưới Bitcoin. Việc hiểu biết những phương pháp này là rất quan trọng để tăng cường bảo vệ quyền riêng tư của bạn. Phần này nhằm xem xét các chiến lược của những kẻ tấn công để hiểu rõ hơn về các rủi ro và đặt nền móng cho các kỹ thuật mà chúng ta sẽ nghiên cứu trong các phần tiếp theo. Chúng ta sẽ phân tích các mẫu giao dịch, đánh giá theo kinh nghiệm nội bộ và bên ngoài, cũng như các cách hiểu hợp lý về những mẫu hình này. Ngoài lý thuyết, chúng ta sẽ học cách sử dụng một trình duyệt blockchain để thực hiện phân tích chuỗi, thông qua các ví dụ và bài tập thực hành.
 
 ![BTC204](assets/notext/11/2.webp)
 
-### Phần 3: Thành Thạo Các Phương Pháp Tốt Nhất để Bảo Vệ Quyền Riêng Tư của Bạn
+### Phần 3: Làm chủ các phương pháp bảo vệ quyền riêng tư của bạn
 
-Trong phần thứ ba của khóa học của chúng tôi, chúng ta đi vào vấn đề chính: thực hành! Mục tiêu là thành thạo tất cả các phương pháp tốt nhất cần thiết mà nên trở thành phản xạ tự nhiên cho bất kỳ người dùng Bitcoin nào. Chúng tôi sẽ đề cập đến việc sử dụng địa chỉ mới, gắn nhãn, hợp nhất, sử dụng các nút đầy đủ, cũng như KYC và phương pháp mua hàng. Mục tiêu là cung cấp cho bạn một cái nhìn tổng quan toàn diện về các bẫy cần tránh để thiết lập nền tảng vững chắc trong nhiệm vụ bảo vệ quyền riêng tư của chúng ta. Đối với một số phương pháp này, bạn sẽ được hướng dẫn đến một hướng dẫn cụ thể để thực hiện chúng.
+Trong phần thứ ba của khóa học, chúng ta đi vào vấn đề chính: thực hành! Mục tiêu là làm chủ tất cả các phương pháp tốt nhất cần thiết, các hoạt động đó nên trở thành phản xạ tự nhiên cho bất kỳ người dùng Bitcoin nào. Chúng tôi sẽ đề cập đến việc sử dụng địa chỉ mới, gắn nhãn, hợp nhất, sử dụng các nút đầy đủ (full node), cũng như KYC và phương pháp mua bitcoin. Mục tiêu là cung cấp cho bạn một cái nhìn tổng quan toàn diện về các bẫy cần tránh để thiết lập nền tảng vững chắc trong nhiệm vụ bảo vệ quyền riêng tư của bản thân. Trong một số trường hợp, bạn sẽ được điều hướng đến một hướng dẫn cụ thể để thực hiện chúng.
 
 ![BTC204](assets/vi/11/3.webp)
 
-### Phần 4: Hiểu về Giao Dịch Coinjoin
+### Phần 4: Hiểu về giao dịch trộn coin - Coinjoin
 
-Làm sao chúng ta có thể nói về quyền riêng tư trên Bitcoin mà không thảo luận về coinjoins? Trong phần 4, bạn sẽ khám phá mọi thứ bạn cần biết về phương pháp trộn này. Bạn sẽ học được coinjoin là gì, lịch sử và mục tiêu của nó, cũng như các loại coinjoin khác nhau tồn tại. Cuối cùng, đối với người dùng có kinh nghiệm hơn, chúng tôi sẽ khám phá những gì là anonsets và entropy, và cách tính toán các chỉ số này.
+Làm sao chúng ta có thể nói về quyền riêng tư trong không gian Bitcoin mà không thảo luận về trộn coin - coinjoins? Trong phần 4, chúng ta sẽ khám phá mọi thứ bạn cần biết về phương pháp trộn này. Bạn sẽ học được trộn coin là gì, lịch sử và mục tiêu của nó, cũng như các hình thức trộn coin khác nhau hiện hành. Cuối cùng, đối với người dùng có kinh nghiệm hơn, chúng ta sẽ khám phá về anonsets và entropy, và cách tính toán các chỉ số này.
 
 ![BTC204](assets/vi/11/4.webp)
 
-### Phần 5: Hiểu về Các Kỹ Thuật Quyền Riêng Tư Nâng Cao Khác
-Trong phần thứ năm, chúng tôi sẽ cung cấp một cái nhìn tổng quan về tất cả các kỹ thuật khác hiện có để bảo vệ quyền riêng tư của bạn trên Bitcoin, ngoài coinjoin. Trải qua nhiều năm, các nhà phát triển đã thể hiện sự sáng tạo đáng kể trong việc thiết kế các công cụ dành riêng cho quyền riêng tư. Chúng tôi sẽ xem xét tất cả các phương pháp này, như payjoin, giao dịch hợp tác, Coin Swap và Atomic Swap, chi tiết về cách hoạt động, mục tiêu và điểm yếu tiềm ẩn.
+### Phần 5: Hiểu về các kỹ thuật nâng cao liên quan tới quyền riêng tư
+Trong phần thứ năm, chúng tôi sẽ cung cấp một cái nhìn tổng quan về tất cả các kỹ thuật khác hiện có để bảo vệ quyền riêng tư của bạn trong không gian Bitcoin, ngoài coinjoin. Trải qua nhiều năm, các nhà phát triển đã thể hiện sự sáng tạo xuất sắc trong việc thiết kế các công cụ chuyên dụng để bảo vệ quyền riêng tư. Chúng ta sẽ khám phá tất cả các phương pháp này, như payjoin, giao dịch hợp tác, Coin Swap và Atomic Swap, chi tiết về cách hoạt động, mục tiêu và điểm yếu tiềm ẩn.
 
-### Phần 6: Khám phá Đề xuất Cải tiến Giao thức Liên quan đến Quyền Riêng tư
+### Phần 6: Khám phá các đề xuất cải tiến giao thức liên quan đến quyền riêng tư
 
-Trong khi các phần trước tập trung vào các giải pháp quyền riêng tư ở cấp độ ứng dụng, phần thứ sáu này sẽ đi sâu vào các vấn đề quyền riêng tư ở cấp độ của Bitcoin Core cho quyền riêng tư của người dùng. Chúng tôi sẽ thảo luận về quyền riêng tư ở cấp độ mạng lưới các nút và việc phát sóng các giao dịch. Chúng tôi cũng sẽ thảo luận về các giao thức đã được đề xuất trong nhiều năm để tăng cường quyền riêng tư của người dùng trên Bitcoin, bao gồm các giao thức địa chỉ tĩnh. Để kết luận, chúng tôi sẽ xem xét ảnh hưởng đối với quyền riêng tư, cả tích cực và tiêu cực, của soft fork lớn cuối cùng của Bitcoin, Taproot.
+Trong khi các phần trước tập trung vào các giải pháp bảo vệ quyền riêng tư ở cấp độ ứng dụng, phần thứ sáu này sẽ đi sâu vào các vấn đề quyền riêng tư của người dùng ở cấp độ Bitcoin Core. Chúng ta sẽ thảo luận về quyền riêng tư ở cấp độ mạng lưới các nút và việc phát tán, lan truyền các giao dịch. Chúng ta cũng sẽ thảo luận về các giao thức đã được đề xuất trong nhiều năm để tăng cường quyền riêng tư của người dùng trông không gian Bitcoin, bao gồm các giao thức địa chỉ tĩnh. Để kết luận, chúng ta sẽ xem xét sự ảnh hưởng tới quyền riêng tư, cả tích cực và tiêu cực, của soft-fork lớn gần đây nhất của Bitcoin, Taproot.
 
-# Định nghĩa và Khái niệm Chính
+# Các định nghĩa và khái niệm chính
 <partId>b9bbbde3-34c0-4851-83e8-e2ffb029cf31</partId>
 
 ## Mô hình UTXO của Bitcoin
 <chapterId>8d6b50c5-bf74-44f4-922b-25204991cb75</chapterId>
 
-Bitcoin chủ yếu là một loại tiền tệ, nhưng bạn có biết cụ thể BTC được biểu diễn như thế nào trên giao thức không?
+Về căn bản, bitcoin là một loại tiền tệ, nhưng bạn có biết chi tiết về cách bitcoin - BTC được thể hiện ở trên giao thức không?
 
-### Bitcoin UTXOs: Chúng Là Gì?
+### Bitcoin UTXOs: Chúng là gì?
 
-Trong giao thức Bitcoin, việc quản lý các đơn vị tiền tệ xoay quanh mô hình UTXO, viết tắt của "_Unspent Transaction Output_".
+Trong giao thức Bitcoin, việc quản lý các đơn vị tiền tệ xoay quanh mô hình UTXO, viết tắt của "_Unspent Transaction Output_", tạm dịch là "đầu ra giao dịch chưa được chi tiêu".
 
-Mô hình này hoàn toàn khác biệt so với các hệ thống ngân hàng truyền thống, dựa vào cơ chế tài khoản và số dư để theo dõi dòng tiền tài chính. Thực sự, trong hệ thống ngân hàng, số dư cá nhân được duy trì trong các tài khoản gắn liền với một danh tính. Ví dụ, khi bạn mua một chiếc bánh mì từ một người bán bánh, ngân hàng của bạn chỉ đơn giản là ghi nợ số tiền mua hàng từ tài khoản của bạn, do đó giảm số dư của bạn, trong khi tài khoản của người bán bánh được ghi có cùng một số tiền, tăng số dư của họ. Trong hệ thống này, không có khái niệm về một liên kết giữa tiền vào tài khoản của bạn và tiền ra khỏi nó, ngoài các bản ghi giao dịch.
+Mô hình này hoàn toàn khác biệt so với các hệ thống ngân hàng truyền thống, dựa vào cơ chế tài khoản và số dư để theo dõi dòng chảy tài chính. Thực sự, trong hệ thống ngân hàng, số dư cá nhân được duy trì trong các tài khoản gắn liền với một danh tính. Ví dụ, khi bạn mua một chiếc bánh mì từ người bán bánh, ngân hàng của bạn chỉ đơn giản là ghi nợ số tiền mua hàng từ tài khoản của bạn, do đó giảm số dư của bạn, trong khi tài khoản của người bán bánh được ghi có cùng một số tiền, tăng số dư của họ. Trong hệ thống này, không có khái niệm về sự liên kết giữa tiền chảy vào tài khoản của bạn và tiền chạy ra khỏi nó, ngoài các bản ghi giao dịch.
 
-Trên Bitcoin, mọi thứ hoạt động khác biệt. Khái niệm về tài khoản không tồn tại, và các đơn vị tiền tệ không được quản lý thông qua số dư mà thông qua UTXOs. Một UTXO đại diện cho một lượng bitcoins cụ thể chưa được chi tiêu, do đó tạo thành một "mảnh bitcoin," có thể lớn hoặc nhỏ. Ví dụ, một UTXO có thể trị giá `500 BTC` hoặc chỉ `700 SATS`.
-**> Lưu ý:** Satoshi, thường được viết tắt là sat, là đơn vị nhỏ nhất của Bitcoin, tương đương với một cent trong tiền tệ fiat.
+Trên Bitcoin, mọi thứ hoạt động khác biệt. Khái niệm về tài khoản không tồn tại, và các đơn vị tiền tệ không được quản lý thông qua số dư mà thông qua UTXOs. Một UTXO đại diện cho một lượng bitcoin cụ thể chưa được chi tiêu, do đó tạo thành một "mẩu bitcoin," có thể lớn hoặc nhỏ. Ví dụ, một UTXO có thể trị giá `500 BTC` hoặc chỉ `700 SAT`.
+**> Lưu ý:** Satoshi, thường được viết tắt là sat, là đơn vị nhỏ nhất của bitcoin, giống như một cent là đơn vị nhỏ nhất trong hệ thống tiền tệ pháp định USD.
 
 ```plaintext
-1 BTC = 100,000,000 SATS
+1 BTC = 100,000,000 SAT
 ```
 
-Lý thuyết, một UTXO có thể đại diện cho bất kỳ giá trị nào bằng bitcoins, từ một sat cho đến giới hạn tối đa lý thuyết khoảng 21 triệu BTC. Tuy nhiên, thực tế không thể sở hữu tất cả 21 triệu bitcoins, và có một ngưỡng kinh tế thấp được gọi là "dust," dưới đó một UTXO được coi là không kinh tế để chi tiêu.
-**> Bạn có biết?** UTXO lớn nhất từng được tạo ra trên Bitcoin có giá trị `500,000 BTC`. Nó được tạo bởi nền tảng MtGox trong một hoạt động tổng hợp vào tháng 11 năm 2011: [29a3efd3ef04f9153d47a990bd7b048a4b2d213daaa5fb8ed670fb85f13bdbcf](https://mempool.space/fr/tx/29a3efd3ef04f9153d47a990bd7b048a4b2d213daaa5fb8ed670fb85f13bdbcf)
-### UTXOs và Điều Kiện Chi Tiêu
+Lý thuyết, một UTXO có thể đại diện cho bất kỳ giá trị nào tính bằng bitcoin, từ một sat cho đến giới hạn tối đa theo lý thuyết là khoảng 21 triệu BTC. Tuy nhiên, việc sở hữu tất cả 21 triệu bitcoin là bất khả thi về mặt logic, và có một ngưỡng thấp được gọi là "bụi - dust", dưới đó một UTXO được coi là không kinh tế để chi tiêu (phí để chi tiêu UTXO ấy còn lớn hơn giá trị của chính UTXO đó).
+**> Bạn có biết?** UTXO lớn nhất từng được tạo ra trên Bitcoin có giá trị `500,000 BTC`. Nó được tạo bởi nền tảng MtGox trong một đợt hợp nhất vào tháng 11 năm 2011: [29a3efd3ef04f9153d47a990bd7b048a4b2d213daaa5fb8ed670fb85f13bdbcf](https://mempool.space/fr/tx/29a3efd3ef04f9153d47a990bd7b048a4b2d213daaa5fb8ed670fb85f13bdbcf)
+### Các UTXO và điều kiện chi tiêu
 
-UTXOs là những công cụ trao đổi trên Bitcoin. Mỗi giao dịch dẫn đến việc tiêu thụ UTXOs như đầu vào và tạo ra UTXOs mới như đầu ra. Khi một giao dịch được thực hiện, các UTXOs được sử dụng như đầu vào được coi là "đã chi tiêu," và UTXOs mới được tạo ra và phân bổ cho người nhận được chỉ định trong đầu ra của giao dịch. Do đó, một UTXO đơn giản đại diện cho một đầu ra giao dịch chưa được chi tiêu, và do đó là một lượng bitcoins thuộc về một người dùng tại một thời điểm nhất định.
+Các UTXO là những phương tiện trao đổi trên Bitcoin. Mỗi giao dịch dẫn đến việc tiêu thụ các UTXO như đầu vào và tạo ra các UTXO mới như đầu ra. Khi một giao dịch được thực hiện, các UTXO được sử dụng như các đầu vào được coi là "đã chi tiêu", các UTXO mới được tạo ra và phân bổ cho người nhận được chỉ định trong các đầu ra của giao dịch. Do đó, một UTXO đơn giản đại diện cho một đầu ra giao dịch chưa được chi tiêu, và là một lượng bitcoin (mẩu bitcoin) thuộc về một người dùng tại một thời điểm nhất định.
 
 ![BTC204](assets/vi/21/2.webp)
-Tất cả UTXOs đều được bảo vệ bởi các script định nghĩa điều kiện mà chúng có thể được chi tiêu. Để tiêu thụ một UTXO, người dùng phải chứng minh với mạng lưới rằng họ đáp ứng các điều kiện được quy định bởi script bảo vệ UTXO đó. Nói chung, UTXOs được bảo vệ bởi một khóa công khai (hoặc một địa chỉ nhận đại diện cho khóa công khai này). Để chi tiêu một UTXO liên kết với khóa công khai này, người dùng phải chứng minh họ giữ khóa riêng tương ứng bằng cách cung cấp một chữ ký số được tạo ra với khóa này. Đây là lý do tại sao người ta nói rằng ví Bitcoin của bạn thực sự không chứa bitcoins, mà thực sự nó lưu trữ các khóa riêng của bạn, từ đó cho phép bạn truy cập vào UTXOs của mình và, theo đó, đến các bitcoins mà chúng đại diện.
+Tất cả UTXOs đều được bảo vệ bởi các script, các script này đặt ra các điều kiện mà chúng có thể được chi tiêu. Để tiêu thụ một UTXO, người dùng phải chứng minh với mạng lưới rằng họ đáp ứng các điều kiện được quy định bởi script bảo vệ UTXO đó. Nói chung, các UTXO được bảo vệ bởi một khóa công khai (hoặc một địa chỉ nhận đại diện cho khóa công khai này). Để chi tiêu một UTXO liên kết với khóa công khai này, người dùng phải chứng minh họ giữ khóa riêng tư tương ứng bằng cách cung cấp một chữ ký số được tạo ra với chìa khóa này. Đây là lý do tại sao người ta nói rằng ví Bitcoin của bạn thực sự không chứa bitcoin, mà thực ra nó lưu trữ các khóa riêng của bạn, từ đó cho phép bạn truy cập vào các UTXO của mình và, do đó, truy cập vào các mẩu bitcoin (lượng bitcoin) mà chúng đại diện.
 ![BTC204](assets/vi/21/3.webp)
 
-Vì khái niệm về tài khoản không tồn tại trong Bitcoin, số dư của một ví đơn giản tương ứng với tổng số giá trị của tất cả UTXOs mà nó có thể chi tiêu. Ví dụ, nếu ví Bitcoin của bạn có thể chi tiêu 4 UTXOs sau:
+Vì khái niệm về tài khoản không tồn tại trong Bitcoin, số dư của một ví đơn giản tương ứng với tổng giá trị của tất cả các UTXO mà nó có thể chi tiêu. Ví dụ, nếu ví Bitcoin của bạn có thể chi tiêu 4 UTXO sau:
 
 ```plaintext
 - 2 BTC
