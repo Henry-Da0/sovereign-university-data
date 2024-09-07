@@ -10,7 +10,7 @@ objectives:
 
 # Bảo vệ quyền riêng tư của bạn trên mạng lưới Bitcoin
 
-Trong một thế giới mà quyền riêng tư của các giao dịch tài chính dần trở thành một thứ xa xỉ, bạn cẩn phải hiểu và thành thạo các nguyên tắc bảo vệ quyền riêng tư trong việc sử dụng Bitcoin của mình, vì đây là điều rất cần thiết. Khóa học này sẽ cung cấp tất cả các chìa khóa, cả lý thuyết lẫn thực hành, để bạn có thể đạt được điều này một cách tự chủ.
+Trong một thế giới mà quyền riêng tư của các giao dịch tài chính dần trở thành một thứ xa xỉ, bạn cẩn phải hiểu rõ và thành thạo các nguyên tắc bảo vệ quyền riêng tư trong việc sử dụng Bitcoin của mình, vì đây là điều rất cần thiết. Khóa học này sẽ cung cấp tất cả các chìa khóa, cả lý thuyết lẫn thực hành, để bạn có thể đạt được điều này một cách tự chủ.
 
 Ngày nay, trong hệ sinh thái Bitcoin, có các công ty chuyên về phân tích chuỗi. Lĩnh vực kinh doanh cốt lõi của họ chính xác là xâm nhập vào không gian riêng tư của bạn, nhằm xâm phạm tính bảo mật trong các giao dịch của bạn. Thực tế, "quyền riêng tư" trên mạng lưới Bitcoin không tồn tại. Do đó, chính bạn, người dùng, phải khẳng định quyền tự nhiên của mình và bảo vệ tính bảo mật trong các giao dịch của mình. Không ai khác sẽ làm điều đó cho bạn.
 
