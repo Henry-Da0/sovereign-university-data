@@ -1,19 +1,19 @@
 ---
 name: Bitcoin Development Accelerator
-goal: Nắm vững tất cả cơ sở để bắt đầu phát triển trên Bitcoin
+goal: Nắm vững tất cả kiến thức cơ bản để bắt đầu phát triển trên Bitcoin
 objectives:
-  - Hiểu rõ các khái niệm cốt lõi và công nghệ làm nền tảng cho Bitcoin.
-  - Nắm vững kỹ năng thực hành về bảo mật Bitcoin, phát triển phần mềm, và quản lý mạng lưới.
+  - Hiểu rõ các khái niệm và công nghệ cốt lõi làm nền tảng cho Bitcoin.
+  - Nắm vững kỹ năng thực hành về bảo mật Bitcoin, phát triển phần mềm, và quản trị mạng lưới.
   - Phát triển kỹ năng chuyên môn về Lightning Network và các giao thức liên quan.
 ---
 
 Chào mừng bạn đến với các khóa học phát triển Cubo+ cho Bitcoin!
 
-Trong 20 giờ tới, bạn sẽ đắm chìm sâu vào các giao thức BTC và LN. Khóa học này được thiết kế cho các lập trình viên muốn bắt đầu làm việc trong hệ sinh thái BTC và đang tìm kiếm một hiểu biết vững chắc về các công nghệ stack khác nhau của BTC và LN.
+Trong 20 giờ tới, bạn sẽ đi sâu vào các giao thức Bitcoin và Lightning Network. Khóa học này được thiết kế cho các lập trình viên muốn bắt đầu làm việc trong hệ sinh thái Bitcoin và đang tìm kiếm những hiểu biết vững chắc về các lớp công nghệ khác nhau của Bitcoin và Lightning Network.
 
-Các video được ghi lại trực tiếp trong suốt bootcamp CUBO+ 2023 tại El Salvador và đã thành công trong việc quy tụ các giáo viên nổi tiếng trên thế giới. Khóa học này được cung cấp miễn phí nhờ sự hào phóng của Fulgure Venture và sự hợp tác của các giáo viên, văn phòng Bitcoin, DecouvreBitcoin, và nhiều bên liên quan khác.
+Các video được ghi hình trực tiếp trong suốt bootcamp CUBO+ 2023 tại El Salvador, nơi đã quy tụ thành công các giáo viên nổi tiếng toàn cầu. Khóa học này được cung cấp miễn phí nhờ sự hào phóng của Fulgure Venture và sự hợp tác của các giáo viên, văn phòng Bitcoin, DecouvreBitcoin, và nhiều bên liên quan khác.
 
-Chúc bạn học vui!
+Chúc bạn học tập vui vẻ!
 
 +++
 
@@ -25,35 +25,128 @@ Chúc bạn học vui!
 
 ![Video](https://youtu.be/4VuI9we_XYM)
 
-Filippo và Mario cung cấp một bài nói giới thiệu về CUBO+, đặt ra sân khấu cho hành trình học tập toàn diện đang chờ đợi. Họ thảo luận về cấu trúc của các khóa học, kết quả học tập, và làm thế nào những điều này sẽ trao quyền cho sinh viên trong lĩnh vực phát triển Bitcoin.
+Filippo và Mario giới thiệu về CUBO+, mở đầu cho hành trình học tập toàn diện phía trước. Họ thảo luận về cấu trúc của các khóa học, kết quả mong đợi, và cách mà những kiến thức này sẽ giúp các sinh viên đạt được thành công trong lĩnh vực phát triển Bitcoin.
 
 ### Mục tiêu
 
-Khóa học nhằm trang bị cho người tham gia một hiểu biết sâu sắc về các nguyên tắc cơ bản của Bitcoin, kỹ năng phát triển thực tế, và khả năng điều hướng và đóng góp hiệu quả vào hệ sinh thái Bitcoin. Thông qua sự kết hợp của kiến thức lý thuyết và bài tập thực hành, sinh viên sẽ nắm vững những kiến thức cơ bản về bảo mật Bitcoin, những phức tạp của ngăn xếp phần mềm của nó, và cơ chế quản lý của nó.
+Khóa học nhằm trang bị cho người học nền tảng hiểu biết sâu sắc về các nguyên tắc cơ bản của Bitcoin, kỹ năng phát triển thực tế, và khả năng khám phá và đóng góp hiệu quả vào hệ sinh thái Bitcoin. Thông qua sự kết hợp của kiến thức lý thuyết và bài tập thực hành, sinh viên sẽ nắm vững những kiến thức cơ bản về bảo mật Bitcoin, sự phức tạp về các tầng của phần mềm và cơ chế quản trị Bitcoin.
 
-### Điều kiện tiên quyết
+### Yêu cầu đầu vào
 
-Người tham gia được kỳ vọng mang theo một tinh thần tò mò mạnh mẽ, một sự háo hức học hỏi ở cấp độ chuyên nghiệp, và một số kiến thức cơ bản về phát triển. Mặc dù không yêu cầu một nền tảng chi tiết về Bitcoin, nhưng một hiểu biết cơ bản về nguyên tắc lập trình và sự mở cửa để tương tác với các khái niệm kỹ thuật phức tạp là cần thiết để tận dụng tối đa khóa học tăng tốc.
+Học viên cần có tinh thần tò mò, ham học hỏi ở cấp độ chuyên nghiệp và một số kiến thức cơ bản về lập trình. Mặc dù không yêu cầu một nền tảng kiến thức chi tiết về Bitcoin, nhưng học viên cần một hiểu biết cơ bản về nguyên tắc lập trình và sự cởi mở để tiếp cận với các khái niệm kỹ thuật phức tạp để tận dụng tối đa khóa học này.
 
-## Tại sao là Bitcoin
+#### Công cụ hỗ trợ
+Trong suốt khóa học, học viên sẽ sử dụng các công cụ quan trọng để nâng cao hiểu biết và trải nghiệm học tập của mình. Việc sử dụng Linux, giao diện dòng lệnh, GitHub và Docker sẽ rất quan trọng để có thể thực hành phát triển Bitcoin. Các công cụ này sẽ hỗ trợ người học trong quá trình làm việc với bộ phần mềm của Bitcoin, quản lý môi trường phát triển, và cộng tác trong các dự án thực tế.
+
+## Tại sao lại là Bitcoin
 <chapterId>89a0aa8b-90bd-58b2-82b3-bc5e1f82eaeb</chapterId>
 
 ### Tại sao El Salvador cần Bitcoin
 
 ![video](https://youtu.be/VExfKFrGuYw)
 
-Bài giảng đầu tiên ‘Tại sao El Salvador cần Bitcoin’ cung cấp một cái nhìn tổng quan về: giao thức Bitcoin và nguồn gốc của nó, phong trào cypherpunk, và tầm quan trọng của Bitcoin như một công cụ tự do (tiền không bị kiểm duyệt, sự bao gồm tài chính, và các chủ đề liên quan khác).
+Chào mừng bạn đến với bài giảng đầu tiên của **Cubo+**. Hôm nay, chúng ta sẽ khám phá thế giới Bitcoin dưới sự dẫn dắt của Ricky, người sáng lập **Bitcoin Italia Podcast**. Ricky là một nhà hoạt động nhân quyền đầy nhiệt huyết, sử dụng Bitcoin như một công cụ để bảo vệ và thúc đẩy nhân quyền. Với hơn sáu năm kinh nghiệm, Ricky đã đi khắp nơi để ghi lại sự chấp nhận Bitcoin ở các thị trường mới nổi như El Salvador và Guatemala. Công việc của anh không chỉ dừng lại ở việc sản xuất podcast, mà còn bao gồm các hoạt động trên YouTube (Bitcoin Explorers) và Twitter (BTC Explorer, Ricky6). Cam kết của Ricky với Bitcoin xuất phát từ niềm tin rằng nó mang đến tự do tài chính và quyền riêng tư, thách thức các hệ thống ngân hàng tập trung truyền thống.
 
-### Phong trào Cypherpunk và kinh tế học Áo
+![Unbanked Population](assets/en/1/1.webp)
+_Dân số toàn cầu không có ngân hàng_
+
+### Bitcoin: Tự do tài chính và tác động của nó tại El Salvador
+
+Bài giảng **‘Tại sao El Salvador cần Bitcoin’** cung cấp một cái nhìn tổng quan về: **giao thức Bitcoin** và nguồn gốc của nó, **phong trào cypherpunk**, và tầm quan trọng của Bitcoin như một công cụ cho tự do (**tiền không bị kiểm duyệt, sự bao gồm về tài chính**, và các chủ đề liên quan khác).
+> **Định nghĩa:**
+>
+> - _Giao thức Bitcoin:_ Các quy tắc và cấu trúc điều chỉnh cách Bitcoin hoạt động như một loại tiền kỹ thuật số phi tập trung.
+> - _Phong trào Cypherpunk:_ Nhóm người ủng hộ việc sử dụng mật mã học để đảm bảo quyền riêng tư và tự do trong không gian kỹ thuật số.
+> - _Sự bao gồm về tài chính:_ Việc cung cấp quyền truy cập vào các dịch vụ tài chính cho những người bị loại trừ khỏi hệ thống ngân hàng truyền thống, thường được gọi là "không có ngân hàng - unbanked."
+> - _Đồng tiền không bị kiểm duyệt:_ Đồng tiền mà chính phủ hoặc các tổ chức tài chính không thể kiểm soát hoặc hạn chế.
+
+#### Nền tảng và hoạt động của Ricky
+
+Hành trình của Ricky đến với Bitcoin bắt nguồn từ việc anh là một nhà hoạt động nhân quyền. Anh tin rằng Bitcoin có thể mang đến cho các cá nhân quyền kiểm soát về tài chính, bảo vệ quyền riêng tư và tránh những hạn chế từ các ngân hàng tập trung. Khám phá của Ricky về việc áp dụng Bitcoin tại các quốc gia như El Salvador cho thấy công nghệ này có thể giúp người dân ở các thị trường mới nổi đạt được độc lập tài chính.
+
+### Ý nghĩa toàn cầu và thách thức của Bitcoin
+
+Bitcoin không chỉ là một loại tiền kỹ thuật số. Nó còn là một công cụ để bảo vệ quyền riêng tư và đảm bảo tự do tài chính. Bằng cách sử dụng **khóa riêng tư**, hoạt động như mật khẩu chính, người dùng có thể quản lý Bitcoin của mình một cách an toàn, và nắm toàn quyền kiểm soát tài sản của bản thân.
+
+Trong các chế độ độc tài, nơi có sự đàn áp tài chính, đặc tính **kháng kiểm duyệt** của Bitcoin cho phép mọi người giao dịch mà không sợ bị đóng băng tài khoản hoặc tịch thu tài sản. Đặc tính **mã nguồn mở** của Bitcoin khuyến khích sự tham gia toàn cầu, tạo ra một cộng đồng không ngừng cải tiến mạng lưới.
+
+![Image](assets/en/1/4.webp)
+
+Mặc dù có tiềm năng lớn, Bitcoin cũng phải đối mặt với nhiều thách thức. Tại một số nơi như Châu Phi và Ấn Độ, cơ sở hạ tầng cơ bản như điện và internet còn thiếu, làm hạn chế khả năng tiếp cận. Hơn nữa, **sự bao gồm về mặt kỹ thuật số** — đảm bảo rằng mọi người ở mọi độ tuổi và trình độ học vấn đều có thể sử dụng công nghệ — vẫn là một trở ngại lớn.
+
+> **Định nghĩa:**
+>
+> - _Khoá riêng tư:_ Mã bí mật cho phép truy cập vào Bitcoin của người dùng.
+> - _Mã nguồn mở:_ Phần mềm mà bất kỳ ai cũng có thể kiểm tra, sửa đổi và cải thiện.
+
+### Trường hợp của El Salvador
+
+Quyết định chấp nhận Bitcoin làm tiền tệ hợp pháp của El Salvador cho thấy tiềm năng chuyển đổi của nó. Bằng cách sử dụng Bitcoin, quốc gia này kỳ vọng thu hút được đầu tư nước ngoài và thúc đẩy ổn định tài chính. Các dự án như **Bitcoin Beach** cho thấy các nền kinh tế địa phương có thể phát triển khi áp dụng Bitcoin làm phương tiện trao đổi.
+
+Tuy nhiên, việc áp dụng Bitcoin trên phạm vi toàn cầu gặp nhiều trở ngại như sự thiếu hiểu biết, kháng cự với công nghệ mới, và thách thức về cơ sở hạ tầng. Con đường đạt đến một hệ thống tài chính bao gồm hơn — nơi Bitcoin có thể giúp nâng tầm các quốc gia đang phát triển — còn dài nhưng đầy hứa hẹn. Đặc tính phi tập trung và mã nguồn mở của Bitcoin mang đến hy vọng cho một tương lai nơi mà mọi người có thể tiếp cận được sự công bằng về mặt tài chính.
+
+#### Kết luận
+
+Tóm lại, Bitcoin mang lại tiềm năng lớn cho sự trao quyền và bao gồm về mặt tài chính, nhưng vẫn còn nhiều thách thức lớn phía trước. Duy trì sự gắn kết với cộng đồng Bitcoin, học hỏi và đặt câu hỏi sẽ là chìa khóa để hiện thực hoá một tương lai tài chính phi tập trung. Thông qua sự hợp tác và ủng hộ, tầm nhìn về một hệ thống tài chính công bằng hơn cho tất cả mọi người có thể trở thành hiện thực.
+
+### Phong trào Cypherpunk và trường phái kinh tế học Áo
 
 ![video](https://youtube.com/live/KIaC31YQLBA)
 
-Trong bài giảng thứ hai 'Phong trào Cypherpunk và Kinh tế học Áo', chúng tôi đã đi sâu vào triết lý Cypherpunk được Rikki giới thiệu trong bài giảng trước.
+#### Phong trào Cypherpunk
 
-Ngoài ra, cuộc thảo luận của chúng tôi tập trung vào Trường Kinh tế Áo, làm nổi bật sự khác biệt của nó so với hệ thống tài chính hiện tại (Kinh tế học Keynes). Chúng tôi đã khám phá các khái niệm như khan hiếm, sở thích thời gian, độ bền và tiết kiệm, mà Saifedean sẽ đi sâu vào hơn. Để chuẩn bị cho bài giảng của ông, tôi khuyên bạn nên đọc The Bitcoin Standard (bạn có thể tìm thấy nó trong 'Tài nguyên bổ sung'), hoặc ít nhất là một vài chương.
+**Phong trào Cypherpunk** nổi lên vào cuối thế kỷ 20, với mục tiêu thúc đẩy quyền riêng tư và tự do thông qua mật mã học. Những người tiên phong như **Eric Hughes** và **Tim May** tin rằng mã hóa mạnh là điều cần thiết để bảo vệ tự do cá nhân trong thế giới kỹ thuật số. Các ý tưởng của họ có ảnh hưởng lớn đến sự ra đời của Bitcoin.
 
-Quan trọng là phải lưu ý rằng mô-đun đầu tiên, 'Tại sao Bitcoin', là cần thiết để hiểu rõ nguồn gốc và mục tiêu trước khi chuyển sang 'Làm thế nào Bitcoin', nơi chúng ta sẽ khám phá ngăn xếp công nghệ của Bitcoin và các sự đánh đổi mà các nhà phát triển đầu tiên đã thực hiện trong giao thức.
-Đây là link, hãy thưởng thức!
+> **Định nghĩa:**
+>
+> - _Cypherpunk:_  Một phong trào thúc đẩy quyền riêng tư và tự do bằng cách sử dụng mật mã học.
+
+#### Trường phái kinh tế học Áo
+
+Đồng thời, **trường phái kinh tế học Áo** đã cung cấp nền tảng cho các nguyên tắc tiền tệ của Bitcoin. Các nhà kinh tế học như **Ludwig von Mises** và **Friedrich Hayek** cho rằng một đồng tiền tốt nên là đồng tiền khan hiếm, bền vững và có thể lưu trữ giá trị tốt — những nguyên tắc cốt lõi đã định hình nên thiết kế của Bitcoin.
+
+> **Định nghĩa:**
+>
+> - _Sự khan hiếm:_ Sự giới hạn về nguồn cung, tạo ra giá trị thông qua nhu cầu được phân bổ cẩn thận.
+
+### Sự ra đời của Bitcoin
+
+**Satoshi Nakamoto** đã kết hợp các ý tưởng này để tạo ra Bitcoin vào năm 2008, một loại tiền kỹ thuật số phi tập trung và có khả năng kháng kiểm duyệt. Bằng cách kết hợp lý tưởng về quyền riêng tư của Cypherpunk với các nguyên tắc về tiền tệ tốt của trường phái kinh tế học Áo, Bitcoin mang đến một hệ thống tài chính mới, thách thức các ngân hàng truyền thống và sự kiểm soát của chính phủ.
+
+> **Định nghĩa:**
+>
+> - _Kháng kiểm duyệt:_ Đồng tiền không thể bị kiểm soát hoặc ngăn chặn bởi các thế lực bên ngoài.
+
+#### Nguyên lý kinh tế chính
+
+- **Sự khan hiếm:** Nguồn cung cố định của Bitcoin đảm bảo giá trị của nó theo thời gian.
+- **Sự ưa thích theo thời gian:** Khuyến khích tiết kiệm cho tương lai thay vì chi tiêu ngay lập tức.
+- **Tiết kiệm:** Lưu trữ giá trị cho các nhu cầu trong tương lai, dẫn đến đầu tư và đổi mới.
+
+> **Định nghĩa:**
+>
+> - _Sự ưa thích theo thời gian:_ Đánh giá cao các hàng hóa ở hiện tại hơn các hàng hóa trong tương lai.
+> - _Tiết kiệm:_ Lưu trữ giá trị để sử dụng trong tương lai.
+
+### Bitcoin tại El Salvador
+
+Việc El Salvador chấp nhận Bitcoin phản ánh tiềm năng của nó như một công cụ tự do tài chính, phù hợp với **Kinh tế học Áo** khi thúc đẩy sự tự nguyện chấp nhận và phi tập trung. Động thái này thách thức các hệ thống tài chính truyền thống bằng cách giải quyết những vấn đề then chốt: cạnh tranh, độc quyền và tịch thu tài sản.
+
+![Image](assets/en/1/5.webp)
+
+- **Cạnh tranh**: Bitcoin tạo ra sự cạnh tranh trong lĩnh vực tài chính bằng cách cung cấp một giải pháp thay thế cho ngân hàng truyền thống, cho phép người dân Salvador bỏ qua các rào cản tài chính và chọn các dịch vụ phù hợp hơn với nhu cầu của họ.
+
+- **Độc quyền**: Bằng cách phi tập trung hoá quyền tiếp cận tài chính, Bitcoin phá vỡ độc quyền của các ngân hàng và đồng tiền do chính phủ phát hành, giảm sự phụ thuộc vào các tổ chức tập trung và thúc đẩy sự bao gồm về mặt tài chính.
+
+- **Tịch thu**: Khả năng chống lại sự tịch thu tuỳ ý của Bitcoin cho phép người dân Salvador kiểm soát tài sản của họ, bảo vệ tài sản khỏi việc bị thu giữ từ bên ngoài và tăng cường chủ quyền tài chính của bản thân.
+
+Việc El Salvador chấp nhận Bitcoin thúc đẩy một hệ thống tài chính bao gồm hơn, cạnh tranh hơn và an toàn hơn, thách thức những hạn chế của tài chính truyền thống.
+
+#### Kết luận
+
+Nền tảng của Bitcoin trong **phong trào Cypherpunk** và **Kinh tế học Áo** đã tạo nên một dạng tiền tệ độc đáo và mang tính cách mạng. Hiểu rõ các nguyên tắc này giúp chúng ta nắm bắt được lý do tại sao Bitcoin được tạo ra và cách thức hoạt động của nó. Để tìm hiểu thêm, bạn có thể đọc **The Bitcoin Standard** của **Saifedean Ammous**.
+
+Cảm ơn bạn đã theo dõi tài liệu này!
 
 ## Làm thế nào Bitcoin
 <chapterId>d800970a-0d8e-5557-810a-7aef845d4a34</chapterId>
