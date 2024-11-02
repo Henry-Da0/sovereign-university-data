@@ -517,177 +517,177 @@ Trong trường hợp của Bitcoin, khóa riêng tư được tạo ra từ m�
 ## Cụm từ ghi nhớ
 <chapterId>8f9340c1-e6dc-5557-a2f2-26c9669987d5</chapterId>
 
-An ninh của một ví Bitcoin là mối quan tâm lớn đối với tất cả người dùng của nó. Một cách thiết yếu để đảm bảo sao lưu ví là tạo ra một cụm từ ghi nhớ dựa trên entropy và checksum.
+Sự an toàn, bảo mật của một ví Bitcoin là mối quan tâm lớn đối với tất cả người dùng. Một cách thiết yếu để đảm bảo sao lưu ví là tạo ra một cụm từ ghi nhớ dựa trên entropy và mã kiểm tra tổng (checksum).
 
 ![image](assets/image/section3/5.webp)
 
-Để chuyển đổi entropy thành cụm từ ghi nhớ, chỉ cần tính toán checksum của entropy và nối entropy và checksum lại với nhau.
+Để chuyển đổi từ entropy thành cụm từ ghi nhớ, chỉ cần tính toán checksum của entropy và ghép nối entropy và checksum lại với nhau.
 
-Một khi entropy được tạo ra, hàm SHA256 được sử dụng trên entropy để tạo ra một hash.
-8 bit đầu tiên của hash được lấy ra, đó là checksum.
+Khi entropy được tạo ra, hàm SHA256 được sử dụng trên entropy để tạo ra một mã băm (hash).
+Sau đó, lấy 8 bit đầu tiên của mã băm làm checksum
 Cụm từ ghi nhớ là kết quả của entropy cộng với checksum.
 
-Checksum đảm bảo việc kiểm tra độ chính xác của cụm từ khôi phục. Không có checksum này, một lỗi trong cụm từ có thể dẫn đến việc tạo ra một ví khác và do đó là mất mát tiền bạc. Checksum được thu được bằng cách đưa entropy qua hàm SHA256 và lấy ra 8 bit đầu tiên của hash.
+Checksum giúp xác minh tính chính xác của cụm từ khôi phục. Không có checksum này, một lỗi trong cụm từ ghi nhớ có thể dẫn đến việc tạo ra một ví khác và do đó dẫn tới mất tài sản. Checksum được thu được bằng cách đưa entropy qua hàm SHA256 và lấy ra 8 bit đầu tiên của mã băm.
 
 ![image](assets/image/section3/6.webp)
 
-Có các tiêu chuẩn khác nhau cho cụm từ ghi nhớ tùy thuộc vào kích thước của entropy. Tiêu chuẩn được sử dụng phổ biến nhất cho một cụm từ khôi phục 24 từ là entropy 256 bit. Kích thước của checksum được xác định bằng cách chia kích thước của entropy cho 32.
-Ví dụ, một entropy 256 bit tạo ra một checksum 8-bit. Việc nối entropy và checksum sau đó dẫn đến các kích thước tương ứng là 128 bit, 160 bit, v.v. Tùy thuộc vào kích thước của entropy, cụm từ khôi phục sẽ bao gồm 12 từ cho 128 bit, 15 từ cho 160 bit và 24 từ cho 256 bit.
+Có các tiêu chuẩn khác nhau cho cụm từ ghi nhớ tùy thuộc vào kích thước của entropy. Tiêu chuẩn được sử dụng phổ biến nhất cho một cụm từ khôi phục 24 từ là entropy có kích thước 256 bit. Kích thước của checksum được xác định bằng cách lấy kích thước của entropy chia cho 32.
+Ví dụ, một entropy 256 bit tạo ra một checksum 8-bit. Việc ghép nối entropy và checksum sẽ tạo ra các kích thước tương ứng là 128 bit, 160 bit, v.v. Tùy thuộc vào kích thước của entropy, cụm từ khôi phục sẽ bao gồm 12 từ cho 128 bit, 15 từ cho 160 bit và 24 từ cho 256 bit.
 **Mã hóa của cụm từ ghi nhớ:**
 
 ![hình ảnh](assets/image/section3/7.webp)
 
 8 bit cuối cùng tương ứng với checksum.
 Mỗi phân đoạn 11-bit được chuyển đổi thành số thập phân.
-Mỗi số thập phân tương ứng với một từ trong danh sách 2048 từ trên BIP39. Điều quan trọng cần lưu ý là không có từ nào có cùng thứ tự của bốn chữ cái đầu tiên.
+Mỗi số thập phân tương ứng với một từ trong danh sách 2048 từ thuộc BIP39. Điều quan trọng cần lưu ý là không có từ nào có bốn chữ cái đầu tiên có thứ tự giống với từ khác.
 
-Việc sao lưu cụm từ khôi phục 24 từ là cần thiết để bảo toàn tính toàn vẹn của ví Bitcoin. Hai tiêu chuẩn được sử dụng phổ biến nhất dựa trên entropy 128 hoặc 256 bit và nối của 12 hoặc 24 từ. Thêm một cụm từ bí mật là một lựa chọn bổ sung để tăng cường bảo mật cho ví.
+Việc sao lưu cụm từ khôi phục 24 từ là việc làm cần thiết để bảo toàn tính toàn vẹn của ví Bitcoin. Hai tiêu chuẩn được sử dụng phổ biến nhất dựa trên entropy 128 hoặc 256 bit và chuỗi của 12 hoặc 24 từ. Thêm một cụm từ bí mật (passphrase) là một tuỳ chọn bổ sung để tăng cường bảo mật cho ví.
 
-Kết luận, việc tạo ra một cụm từ ghi nhớ để bảo vệ ví Bitcoin là một quá trình quan trọng. Việc tuân thủ các tiêu chuẩn của cụm từ ghi nhớ dựa trên kích thước của entropy là quan trọng. Sao lưu cụm từ khôi phục 24 từ là cần thiết để ngăn chặn bất kỳ sự mất mát tiền bạc nào.
+Kết luận, tạo một cụm từ ghi nhớ để bảo vệ ví Bitcoin là một quá trình quan trọng. Chúng ta cần tuân thủ các tiêu chuẩn của cụm từ ghi nhớ dựa trên kích thước của entropy. Sao lưu cụm từ khôi phục 24 từ là việc làm cần thiết để tránh rủi ro mất mát tài sản.
 
-## Cụm từ bí mật
+## Cụm từ bí mật - Passphrase
 <chapterId>6a51b397-f3b5-5084-b151-cef94bc9b93f</chapterId>
 
-Cụm từ bí mật là một mật khẩu bổ sung có thể được tích hợp vào ví Bitcoin để tăng cường bảo mật của nó. Việc sử dụng nó là tùy chọn và tùy thuộc vào quyết định của người dùng. Bằng cách thêm thông tin tùy ý mà, cùng với cụm từ ghi nhớ, cho phép tính toán hạt giống của ví, cụm từ bí mật tăng cường bảo mật của nó.
+Passphrase là một mật khẩu bổ sung có thể được tích hợp vào ví Bitcoin để tăng cường bảo mật. Việc sử dụng nó là tùy chọn và tùy thuộc vào quyết định của mỗi người dùng. Bằng cách thêm thông tin tùy ý mà, cùng với cụm từ ghi nhớ, cho phép tính toán hạt giống của ví, passphrase giúp tăng cường bảo mật cho ví.
 
 ![hình ảnh](assets/image/section3/8.webp)
 
-Cụm từ bí mật là một loại muối mật mã tùy chọn với kích thước do người dùng chọn. Nó cải thiện bảo mật của một ví HD bằng cách thêm thông tin tùy ý mà, khi kết hợp với cụm từ ghi nhớ, sẽ cho phép tính toán hạt giống.
+Cụm từ bí mật là một loại "muối -salt" mật mã tùy chọn với kích thước do người dùng chọn. Nó giúp cải thiện bảo mật của ví HD bằng cách thêm thông tin tùy ý mà, khi kết hợp với cụm từ ghi nhớ, sẽ cho phép tính toán ra hạt giống.
 
-Một khi đã được thiết lập trong quá trình tạo ví, nó là cần thiết cho việc suy ra tất cả các khóa của ví. Hàm pbkdf2 được sử dụng để tạo ra hạt giống từ cụm từ bí mật. Hạt giống này cho phép suy ra tất cả các cặp khóa con của ví. Nếu cụm từ bí mật được thay đổi, ví Bitcoin trở nên hoàn toàn khác biệt.
+Một khi đã được thiết lập trong quá trình tạo ví, passphrase là yếu tố cần thiết để phái sinh ra tất cả các khóa của ví. Hàm pbkdf2 được sử dụng để tạo ra hạt giống từ passphrase. Hạt giống này cho phép suy ra tất cả các cặp khóa con của ví. Nếu passphrase bị thay đổi, ví Bitcoin mà bạn truy cập được sẽ trở nên hoàn toàn khác biệt.
 
-Cụm từ bí mật là một công cụ thiết yếu để tăng cường bảo mật cho ví Bitcoin. Nó có thể cho phép thực hiện các chiến lược bảo mật khác nhau. Ví dụ, nó có thể được sử dụng để tạo bản sao và hỗ trợ sao lưu cụm từ ghi nhớ. Nó cũng có thể cải thiện bảo mật của ví bằng cách giảm thiểu rủi ro liên quan đến việc tạo ngẫu nhiên cụm từ ghi nhớ.
+Passphrase là một công cụ thiết yếu để tăng cường bảo mật cho ví Bitcoin. Nó cho phép người dùng áp dụng các chiến lược bảo mật khác nhau. Ví dụ, nó có thể được sử dụng để tạo bản sao và hỗ trợ sao lưu cụm từ ghi nhớ. Nó cũng có thể cải thiện bảo mật của ví bằng cách giảm thiểu rủi ro liên quan đến việc tạo cụm từ ghi nhớ một cách ngẫu nhiên.
 
-Một cụm từ bí mật hiệu quả nên dài (20 đến 40 ký tự) và đa dạng (sử dụng chữ hoa, chữ thường, số và ký hiệu). Nó không nên trực tiếp liên quan đến người dùng hoặc môi trường xung quanh của họ. An toàn hơn khi sử dụng một chuỗi ký tự ngẫu nhiên thay vì một từ đơn giản làm cụm từ bí mật.
+Một passphrase hiệu quả nên dài (20 đến 40 ký tự) và đa dạng (sử dụng chữ hoa, chữ thường, số và ký hiệu). Passphrase không nên liên quan trực tiếp đến người dùng hoặc môi trường xung quanh của họ. An toàn hơn khi sử dụng một chuỗi ký tự ngẫu nhiên thay vì một từ đơn giản làm passphrase.
 
 ![hình ảnh](assets/image/section3/9.webp)
 
-Một cụm từ bí mật an toàn hơn một mật khẩu đơn giản. Cụm từ bí mật lý tưởng là dài, đa dạng và ngẫu nhiên. Nó có thể tăng cường bảo mật cho một ví hoặc phần mềm nóng. Nó cũng có thể được sử dụng để tạo ra các bản sao lưu dự phòng và an toàn.
+Passphrase an toàn hơn một mật khẩu đơn giản. Một passphrase lý tưởng khi nó dài, đa dạng và ngẫu nhiên. Nó có thể tăng cường bảo mật cho một ví hoặc phần mềm nóng. Nó cũng có thể được sử dụng để tạo ra các bản sao lưu dự phòng và an toàn.
 
-Việc chăm sóc sao lưu cụm từ bí mật là rất quan trọng để tránh mất quyền truy cập vào ví. Cụm từ bí mật là một lựa chọn cho một ví HD. Nó có thể được tạo ra một cách ngẫu nhiên với xúc xắc hoặc một trình tạo số giả ngẫu nhiên khác. Không được khuyến khích ghi nhớ cụm từ bí mật hoặc cụm từ ghi nhớ.
+Điều quan trọng là phải cẩn thận trong việc sao lưu passphrase để tránh mất quyền truy cập vào ví. Passphrase là một tuỳ chọn cho ví HD. Nó có thể được tạo ra ngẫu nhiên bằng cách sử dụng xúc xắc hoặc công cụ tạo số ngẫu nhiên giả khác. Không khuyến khích ghi nhớ passphrase hoặc cụm từ ghi nhớ.
 
-Trong bài học tiếp theo, chúng ta sẽ xem xét chi tiết về cách hoạt động của hạt giống và cặp khóa đầu tiên được tạo ra từ nó. Hãy tiếp tục theo dõi khóa học này để tiếp tục học hỏi. Chúng tôi mong được gặp lại bạn rất sớm.
-# Tạo Ví Bitcoin
+Trong bài học tiếp theo, chúng ta sẽ xem xét chi tiết về cách hoạt động của hạt giống và cặp khóa đầu tiên được tạo ra từ nó. Đừng ngần ngại tham gia bài học này để tiếp tục hành trình học tập của bạn. Chúng tôi rất mong được gặp lại bạn sớm.
+# Tạo ví Bitcoin
 <partId>9c25e767-7eae-50b8-8c5f-679d8fc83bab</partId>
-## Tạo Seed và Master Key
+## Tạo Seed - Hạt giống và Master Key - Khoá chính
 <chapterId>63093760-2010-5691-8d0e-9a04732ae557</chapterId>
 
-Trong phần này của khóa học, chúng ta sẽ khám phá các bước để tạo ra một Ví Định Hình Phân Cấp (HD Wallet), cho phép việc tạo và quản lý các khóa riêng tư và công khai một cách có hệ thống và định hình.
+Trong phần này của khóa học, chúng ta sẽ khám phá các bước để tạo ra một Ví phân cấp tất định (HD Wallet), giúp tạo và quản lý các khóa riêng tư và công khai một cách có hệ thống và xác định.
 
 ![image](assets/image/section4/0.webp)
 
-Nền tảng của HD Wallet dựa trên hai yếu tố thiết yếu: cụm từ ghi nhớ và cụm từ bí mật (mật khẩu bổ sung tuỳ chọn). Cả hai cùng tạo nên seed, một chuỗi số và chữ có độ dài 512 bit, phục vụ như là cơ sở để tạo ra các khóa của ví. Từ seed này, có thể tạo ra tất cả các cặp khóa con của ví Bitcoin. Seed là chìa khóa mở ra quyền truy cập vào tất cả các bitcoin liên kết với ví, cho dù bạn có sử dụng cụm từ bí mật hay không.
+Nền tảng của ví HD dựa trên hai yếu tố thiết yếu: cụm từ ghi nhớ và passphrase (mật khẩu bổ sung tuỳ chọn). Cả hai cùng nhau tạo thành hạt giống - seed, một chuỗi ký tự (gồm chữ số và chữ cái) có độ dài 512 bit, là cơ sở để tạo ra các khóa của ví. Từ hạt giống này, có thể tạo ra tất cả các cặp khóa con của ví Bitcoin. Hạt giống là chìa khóa để truy cập vào toàn bộ số bitcoin liên kết với ví, cho dù bạn có sử dụng passphrase hay không.
 
 ![image](assets/image/section4/1.webp)
 
-Để có được seed, hàm pbkdf2 (Password-Based Key Derivation Function 2) được sử dụng với cụm từ ghi nhớ và cụm từ bí mật. Kết quả của pbkdf2 là một seed 512-bit.
+Để có được hạt giống, hàm pbkdf2 (Password-Based Key Derivation Function 2) được sử dụng với cụm từ ghi nhớ và passphrase. Kết quả của pbkdf2 là một hạt giống có kích thước 512-bit.
 
-Từ seed, có thể xác định master private key và chain code sử dụng thuật toán HMAC SHA-512 (Hash-based Message Authentication Code Secure Hash Algorithm 512). Thuật toán này yêu cầu một thông điệp và một khóa làm đầu vào để tạo ra kết quả. Master private key được tính toán từ seed và cụm từ "Bitcoin SEED". Cụm từ này giống nhau cho tất cả các dẫn xuất của tất cả HD wallets, đảm bảo sự nhất quán giữa các ví.
+Từ hạt giống, có thể xác định khoá riêng chính và mã chuỗi bằng cách sử dụng thuật toán HMAC SHA-512 (Hash-based Message Authentication Code Secure Hash Algorithm 512). Thuật toán này yêu cầu một thông điệp và một khóa làm đầu vào để tạo ra kết quả. Khoá riêng chính được tính toán từ hạt giống và cụm từ "Bitcoin SEED". Cụm từ này giống nhau cho tất cả các phái sinh của tất cả các ví HD, đảm bảo sự nhất quán giữa các ví.
 
-Ban đầu, hàm SHA-512 không được triển khai trong giao thức Bitcoin, đó là lý do tại sao HMAC SHA-512 được sử dụng. Việc sử dụng HMAC SHA-512 với cụm từ "Bitcoin SEED" hạn chế người dùng tạo ra một ví cụ thể cho Bitcoin. Kết quả của HMAC SHA-512 là một số 512-bit, chia thành hai phần: 256 bit bên trái đại diện cho master private key, trong khi 256 bit bên phải đại diện cho master chain code.
+Ban đầu, hàm SHA-512 không được triển khai trong giao thức Bitcoin, đó là lý do tại sao HMAC SHA-512 được sử dụng. Việc sử dụng HMAC SHA-512 với cụm từ "Bitcoin SEED" buộc người dùng tạo ra một ví cụ thể cho Bitcoin. Kết quả của HMAC SHA-512 là một số có kích thước 512-bit, chia thành hai phần: 256 bit bên trái đại diện cho khoá riêng chính, trong khi 256 bit bên phải đại diện cho mã chuỗi chính.
 
 ![image](assets/image/section4/2.webp)
 
-Master private key là khóa cha của tất cả các khóa trong tương lai trong ví, trong khi master chain code tham gia vào việc dẫn xuất các khóa con. Quan trọng là phải lưu ý rằng không thể dẫn xuất một cặp khóa con mà không biết chain code tương ứng của cặp cha.
+Khoá riêng chính là khóa cha của tất cả các khóa trong tương lai thuộc về ví, trong khi đó mã chuỗi chính tham gia vào việc phái sinh ra các khóa con. Quan trọng là phải lưu ý rằng không thể dẫn xuất một cặp khóa con mà không biết chain code tương ứng của cặp cha.
 
 Một cặp khóa trong ví bao gồm một khóa riêng tư, một khóa công khai, và một chain code. Chain code giới thiệu một nguồn ngẫu nhiên trong quá trình dẫn xuất các khóa con và cô lập mỗi cặp khóa để ngăn chặn bất kỳ sự rò rỉ thông tin nào.
-Quan trọng là phải lưu ý rằng master private key là khóa riêng tư đầu tiên được dẫn xuất từ seed và không có liên kết với các khóa mở rộng của ví.
+Quan trọng là phải lưu ý là khoá riêng chính là khóa riêng tư đầu tiên được dẫn xuất từ hạt giống và không có liên kết với các khóa mở rộng của ví.
 
-Trong bài học tiếp theo, chúng ta sẽ khám phá chi tiết về các khóa mở rộng, như xPub, xPRV, zPub, và hiểu tại sao chúng được sử dụng và cách chúng được xây dựng.
+Trong bài học tiếp theo, chúng ta sẽ khám phá chi tiết về các khóa mở rộng, như xPub, xPRV, zPub, và hiểu tại sao chúng được sử dụng và cách chúng được tạo ra.
 
-## Khóa Mở Rộng
+## Khóa mở rộng
 <chapterId>8dcffce1-31bd-5e0b-965b-735f5f9e4602</chapterId>
 
-Trong phần này của bài học, chúng ta sẽ nghiên cứu về các khóa mở rộng (xPub, zPub, yPub) và các tiền tố của chúng, đóng vai trò quan trọng trong việc dẫn xuất các khóa con trong một Ví Định Hình Phân Cấp (HD Wallet).
+Trong phần này của khoá học, chúng ta sẽ nghiên cứu về các khóa mở rộng (xPub, zPub, yPub) và các tiền tố của chúng, thành phần đóng vai trò quan trọng trong việc dẫn xuất các khóa con trong một ví HD.
 
 ![image](assets/image/section4/3.webp)
 
-Khóa mở rộng khác biệt so với khóa chính. Một HD wallet tạo ra một cụm từ ghi nhớ và một seed để có được khóa chính và master chain code. Khóa mở rộng được sử dụng để dẫn xuất các khóa con và yêu cầu cả khóa cha và chain code tương ứng. Một khóa mở rộng kết hợp hai thông tin này để đơn giản hóa quá trình dẫn xuất.
+Khóa mở rộng khác biệt so với các khóa chính. Một ví HD tạo ra một cụm từ ghi nhớ và một hạt giống để có được khóa chính và mã chuỗi chính. Khóa mở rộng được sử dụng để dẫn xuất ra các khóa con và yêu cầu cả khóa cha và mã chuỗi tương ứng. Một khóa mở rộng kết hợp hai thông tin này để đơn giản hóa quá trình dẫn xuất.
 
 ![image](assets/image/section4/4.webp)
-Các khóa công khai mở rộng chỉ có thể tạo ra các khóa công khai con thông thường, trong khi các khóa riêng tư mở rộng có thể tạo ra cả khóa công khai và riêng tư con, dù là thông qua quá trình tạo ra thông thường hay cứng nhắc. Quá trình tạo ra cứng nhắc là quá trình tạo ra từ khóa riêng tư cha, trong khi quá trình tạo ra thông thường tương ứng với quá trình tạo ra từ khóa công khai cha.
+Các khóa công khai mở rộng chỉ có thể tạo ra các khóa công khai con thông thường, trong khi các khóa riêng tư mở rộng có thể tạo ra cả khóa công khai và riêng tư con, dù là thông qua quá trình dẫn xuất thông thường hay cứng nhắc. Quá trình dẫn xuất cứng nhắc là quá trình dẫn xuất từ khóa riêng tư cha, trong khi quá trình dẫn xuất thông thường tương ứng với quá trình dẫn xuất từ khóa công khai cha.
 
-Sử dụng các khóa mở rộng với tiền tố XPUB cho phép tạo ra các địa chỉ mới mà không cần quay lại với các khóa riêng tư tương ứng, do đó cung cấp bảo mật tốt hơn. Metadata liên quan đến các khóa mở rộng cung cấp thông tin quan trọng về vai trò và vị trí của chúng trong hệ thống phân cấp khóa.
+Sử dụng các khóa mở rộng với tiền tố XPUB cho phép dẫn xuất ra các địa chỉ mới mà không cần truy cập đến các khóa riêng tư tương ứng, do đó cung cấp bảo mật tốt hơn. Siêu dữ liệu liên quan đến các khóa mở rộng cung cấp thông tin quan trọng về vai trò và vị trí của chúng trong hệ thống phân cấp khóa.
 
-Các khóa mở rộng được xác định bởi các tiền tố cụ thể (XPRV, XPUB, YPUB, ZPUB) chỉ ra liệu đó là khóa riêng tư mở rộng hay khóa công khai mở rộng, cũng như mục đích cụ thể của nó. Metadata liên quan đến một khóa mở rộng bao gồm phiên bản (tiền tố), độ sâu, dấu vân tay khóa cha, chỉ số, và payload (mã chuỗi và khóa cha).
+Các khóa mở rộng được xác định bởi các tiền tố cụ thể (XPRV, XPUB, YPUB, ZPUB) chỉ rõ liệu đó là khóa riêng tư mở rộng hay khóa công khai mở rộng, cũng như mục đích cụ thể của nó. Siêu dữ liệu liên quan đến một khóa mở rộng bao gồm phiên bản (tiền tố), độ sâu, dấu vân tay khóa cha, chỉ mục, và payload (mã chuỗi và khóa cha).
 
 ![image](assets/image/section4/5.webp)
 
 Phiên bản tương ứng với loại khóa: xpub, xprv, ...
 
-Độ sâu tương ứng với số lượng quá trình tạo ra giữa khóa cha và con kể từ khóa chính.
+Độ sâu tương ứng với số lượng dẫn xuất giữa khóa cha và con kể từ khóa chính.
 
-Dấu vân tay cha là 4 byte đầu tiên của hash 160 của khóa cha. Chỉ số là số thứ tự của cặp được sử dụng để tạo ra khóa mở rộng trong số các khóa cùng độ sâu. (các khóa cùng độ sâu = các khóa có cùng độ sâu) Ví dụ, nếu chúng ta muốn tạo ra xpub của tài khoản thứ 3 của mình, chỉ số của nó sẽ là 2 (vì chỉ số bắt đầu từ 0).
+Dấu vân tay cha là 4 byte đầu tiên của hash 160 của khóa cha. Chỉ mục là số thứ tự của cặp được sử dụng để tạo ra khóa mở rộng trong số các khóa cùng độ sâu. Ví dụ, nếu chúng ta muốn tạo ra xpub của tài khoản thứ 3 của mình, chỉ mục của nó sẽ là 2 (vì chỉ mục bắt đầu đánh số từ 0).
 
 Payload bao gồm mã chuỗi (32 byte) và khóa cha (33 byte).
 
-Các khóa công khai nén có kích thước 33 byte, trong khi các khóa công khai thô là 512 bit. Các khóa công khai nén giữ lại cùng một thông tin như khóa thô, nhưng với kích thước giảm. Các khóa mở rộng có kích thước 82 byte và tiền tố của chúng được biểu diễn bằng cơ số 58 thông qua chuyển đổi sang hệ thập lục phân. Checksum được tính toán sử dụng hàm băm HASH256.
+Các khóa công khai nén có kích thước 33 byte, trong khi các khóa công khai thô là 512 bit. Các khóa công khai nén giữ lại cùng một thông tin như khóa thô, nhưng với kích thước giảm. Các khóa mở rộng có kích thước 82 byte và tiền tố của chúng được biểu diễn bằng hệ cơ sở 58 thông qua chuyển đổi thập lục phân. Checksum được tính toán bằng cách sử dụng hàm băm HASH256.
 
 ![image](assets/image/section4/6.webp)
 
-Các quá trình tạo ra nâng cao bắt đầu từ các chỉ số là lũy thừa của 2 (2^31). Điều thú vị là các tiền tố được sử dụng phổ biến nhất là xpub và zpub, tương ứng với các tiêu chuẩn di sản và segwit v1 và segwit v0.
+Các quá trình dẫn xuất nâng cao bắt đầu từ các chỉ mục là lũy thừa của 2 (2^31). Điều thú vị là các tiền tố được sử dụng phổ biến nhất là xpub và zpub, tương ứng với các tiêu chuẩn legacy và segwit v1 và segwit v0.
 
 Trong bài học tiếp theo, chúng ta sẽ tập trung vào quá trình tạo ra các cặp khóa con sử dụng kiến thức đã học về các khóa mở rộng và khóa chính của ví.
 
 ## Quá trình tạo ra các cặp khóa con
 <chapterId>61c0807c-845b-5076-ad06-7f395b36adfd</chapterId>
 
-Như đã nhắc nhở, chúng ta đã thảo luận về việc tính toán hạt giống và khóa chính, đó là các yếu tố thiết yếu đầu tiên cho tổ chức phân cấp và quá trình tạo ra của ví HD (Hierarchical Deterministic). Hạt giống, với độ dài từ 128 đến 256 bit, được tạo ra một cách ngẫu nhiên hoặc từ một cụm từ bí mật. Nó đóng vai trò quyết định trong quá trình tạo ra tất cả các khóa khác. Khóa chính là khóa đầu tiên được tạo ra từ hạt giống, và nó cho phép tạo ra tất cả các cặp khóa con khác.
+Chúng ta đã thảo luận về việc tính toán hạt giống và khóa chính, đó là các yếu tố thiết yếu đầu tiên để phân cấp và dẫn xuất trong ví HD. Hạt giống, với độ dài từ 128 đến 256 bit, được tạo ra một cách ngẫu nhiên hoặc từ một cụm từ bí mật. Hạt giống đóng vai trò quyết định trong quá trình tạo ra tất cả các khóa khác. Khóa chính là khóa đầu tiên được tạo ra từ hạt giống, và nó cho phép tạo ra tất cả các cặp khóa con khác.
 
 Mã chuỗi chính đóng một vai trò quan trọng trong việc khôi phục ví từ hạt giống. Cần lưu ý rằng tất cả các khóa được tạo ra từ cùng một hạt giống sẽ có cùng mã chuỗi chính.
 
 ![image](assets/image/section4/7.webp)
 
-Tổ chức phân cấp và quá trình tạo ra của ví HD cung cấp quản lý khóa và cấu trúc ví hiệu quả hơn. Các khóa mở rộng cho phép tạo ra một cặp khóa con từ một cặp khóa cha sử dụng các phép toán toán học và thuật toán cụ thể.
-Có các loại cặp khóa con khác nhau, bao gồm khóa củng cố và khóa bình thường. Khóa công khai mở rộng chỉ cho phép tạo ra các khóa con công khai bình thường, trong khi khóa riêng tư mở rộng cho phép tạo ra tất cả các khóa con, cả công khai và riêng tư, dù chúng ở chế độ bình thường hay củng cố. Mỗi cặp khóa có một chỉ số cho phép phân biệt chúng với nhau.
+Việc phân cấp và dẫn xuất trong ví HD đem đến một cách quản lý khóa và cấu trúc ví hiệu quả hơn. Các khóa mở rộng cho phép tạo ra một cặp khóa con từ một cặp khóa cha sử dụng các phép tính toán toán học và thuật toán cụ thể.
+Có các loại cặp khóa con khác nhau, bao gồm khóa cứng và khóa bình thường. Khóa công khai mở rộng chỉ cho phép tạo ra các khóa con công khai bình thường, trong khi khóa riêng tư mở rộng cho phép tạo ra tất cả các khóa con, cả công khai và riêng tư, dù chúng ở chế độ bình thường hay cứng. Mỗi cặp khóa có một chỉ mục cho phép phân biệt chúng với nhau.
 ![image](assets/image/section4/8.webp)
 
-Quá trình tạo ra các khóa con sử dụng hàm HMAC-SHA512 với khóa cha kết hợp với chỉ số và mã chuỗi liên kết với cặp khóa. Các khóa con bình thường có chỉ số nằm trong khoảng từ 0 đến 2 mũ 31 trừ 1, trong khi các khóa con củng cố có chỉ số nằm trong khoảng từ 2 mũ 31 đến 2 mũ 32 trừ 1.
+Quá trình dẫn xuất các khóa con sử dụng hàm HMAC-SHA512 với khóa cha kết hợp với chỉ mục và mã chuỗi liên kết với cặp khóa. Các khóa con bình thường có chỉ số nằm trong khoảng từ 0 đến 2^31 - 1, trong khi các khóa con cứng có chỉ số nằm trong khoảng từ 2^31 đến 2^32-1.
 
 ![image](assets/image/section4/9.webp)
 
 ![image](assets/image/section4/10.webp)
 
-Có hai loại cặp khóa con: cặp củng cố và cặp bình thường. Quá trình tạo ra các khóa con sử dụng khóa công khai để tạo điều kiện chi tiêu, trong khi khóa riêng tư được sử dụng để ký. Khóa công khai mở rộng chỉ cho phép tạo ra các khóa con công khai bình thường, trong khi khóa riêng tư mở rộng cho phép tạo ra tất cả các khóa con, cả công khai và riêng tư, ở chế độ bình thường hoặc củng cố.
+Có hai loại cặp khóa con: cặp cứng và cặp bình thường. Quá trình dẫn xuất ra các khóa con sử dụng khóa công khai để tạo điều kiện chi tiêu, trong khi khóa riêng tư được sử dụng để ký. Khóa công khai mở rộng chỉ cho phép tạo ra các khóa công khai con bình thường, trong khi khóa riêng tư mở rộng cho phép tạo ra tất cả các khóa con, cả công khai và riêng tư, ở chế độ bình thường hoặc cứng.
 
 ![image](assets/image/section4/11.webp)
 ![image](assets/image/section4/12.webp)
 
-Quá trình củng cố sử dụng khóa riêng tư cha, trong khi quá trình bình thường sử dụng khóa công khai cha. Hàm HMAC-SHA512 được sử dụng cho quá trình củng cố, trong khi quá trình bình thường sử dụng một bản tóm tắt 512-bit. Khóa công khai con được thu được bằng cách nhân khóa riêng tư con với bộ sinh đường cong e-líp.
+Quá trình dẫn xuất cứng sử dụng khóa riêng tư cha, trong khi quá trình dẫn xuất bình thường sử dụng khóa công khai cha. Hàm HMAC-SHA512 được sử dụng cho quá trình dẫn xuất cứng, trong khi quá trình dẫn xuất bình thường sử dụng một bộ kết quả băm 512-bit. Khóa công khai con được thu được bằng cách nhân khóa riêng tư con với bộ sinh của đường cong e-líp.
 
 ![image](assets/image/section4/13.webp)
 ![image](assets/image/section4/14.webp)
 
-Việc tạo ra và tạo ra nhiều cặp khóa một cách có hệ thống theo cấp bậc cho phép tạo ra một cấu trúc cây cho quá trình tạo ra theo cấp bậc. Trong bài học tiếp theo của khóa học này, chúng ta sẽ nghiên cứu cấu trúc của ví HD cũng như các đường dẫn tạo ra, với một sự tập trung đặc biệt vào ký hiệu đường dẫn tạo ra.
+Việc sắp xếp và dẫn xuất một cách xác định nhiều cặp khóa cho phép tạo ra một sơ đồ cây cho dẫn xuất phân cấp. Trong bài học tiếp theo, chúng ta sẽ tìm hiểu cấu trúc ví HD cũng như các đường dẫn dẫn xuất, đặc biệt tập trung vào ký hiệu của các đường dẫn dẫn xuất.
 
-## Cấu Trúc Ví và Đường Dẫn Tạo Ra
+## Cấu trúc ví và các đường dẫn xuất
 <chapterId>34e1bbda-67de-5493-b268-1fded8d67689</chapterId>
 
-Trong chương này, chúng ta sẽ nghiên cứu cấu trúc của cây tạo ra trong một Ví Định Hình Phân Cấp (HD Wallet). Chúng ta đã khám phá tính toán hạt giống, khóa chính, và quá trình tạo ra các cặp khóa con. Bây giờ, chúng ta sẽ tập trung vào việc tổ chức các khóa trong ví.
+Trong chương này, chúng ta sẽ nghiên cứu cấu trúc của cây dẫn xuất trong một ví HD. Chúng ta đã tìm hiểu về quá trình tính toán hạt giống, khóa chính, và quá trình dẫn xuất các cặp khóa con. Bây giờ, chúng ta sẽ tập trung vào cách tổ chức các khóa trong ví.
 
-Ví HD sử dụng các lớp độ sâu để tổ chức khóa. Mỗi quá trình tạo ra từ một cặp cha mẹ sang một cặp con tương ứng với một lớp độ sâu.
+Ví HD sử dụng các lớp độ sâu để tổ chức các khóa. Mỗi lần dẫn xuất từ một cặp khoá cha mẹ sang một cặp con tương ứng với một lớp độ sâu.
 
 ![image](assets/image/section4/15.webp)
 
-- Độ sâu 0 tương ứng với khóa chính và mã chuỗi chính.
+- **Độ sâu 0:** tương ứng với khóa chính và mã chuỗi chính.
 
-- Độ sâu 1 được sử dụng để tạo ra các khóa con cho một mục đích cụ thể, được xác định bởi chỉ số. Các mục đích tuân theo BIP 84 và các tiêu chuẩn Segwit v0/v1.
+- **Độ sâu 1:** được sử dụng để tạo ra các khóa con cho một mục tiêu cụ thể, được xác định bởi chỉ mục. Các mục tiêu này tuân theo BIP 84 và các tiêu chuẩn Segwit v0/v1.
 
-- Độ sâu 2 cho phép phân biệt các tài khoản cho các loại tiền điện tử hoặc mạng khác nhau. Điều này cho phép tổ chức ví dựa trên các nguồn vốn khác nhau. Đối với bitcoin, chỉ số sẽ là 0.
+**- Độ sâu 2:** cho phép phân biệt các tài khoản cho các loại tiền điện tử hoặc mạng khác nhau. Điều này cho phép tổ chức ví dựa trên các nguồn tiền khác nhau. Đối với bitcoin, chỉ mục sẽ là 0.
 
-- Độ sâu 3 được sử dụng để tổ chức ví thành các tài khoản khác nhau, cung cấp một cấu trúc rõ ràng và tổ chức hơn.
+**- Độ sâu 3:** được sử dụng để tổ chức ví thành các tài khoản khác nhau, cung cấp một cấu trúc rõ ràng và có tổ chức hơn.
 
-- Độ sâu 4 tương ứng với các chuỗi ngoại và nội, được sử dụng cho các địa chỉ dự định được công bố công khai. Chỉ số 0 được liên kết với chuỗi ngoại, trong khi chỉ số 1 được liên kết với chuỗi nội. Mỗi tài khoản có hai chuỗi: chuỗi ngoại (0) và chuỗi nội (1). Độ sâu 4 cũng được sử dụng để quản lý các loại kịch bản trong trường hợp của các ví đa chữ ký.
-- Mức độ 5 được sử dụng để nhận địa chỉ trong một ví tiêu chuẩn. Trong phần tiếp theo, chúng ta sẽ xem xét chi tiết hơn về việc tạo ra các cặp khóa con.
+**- Độ sâu 4:** tương ứng với các chuỗi bên ngoài và nội bộ, được sử dụng cho các địa chỉ dự định được công bố công khai. Chỉ số 0 được liên kết với chuỗi bên ngoài, trong khi chỉ số 1 được liên kết với chuỗi nội bộ. Mỗi tài khoản có hai chuỗi: chuỗi bên ngoài (0) và chuỗi nội bộ (1). Độ sâu 4 cũng được sử dụng để quản lý các loại kịch bản trong trường hợp của các ví đa chữ ký.
+**- Độ sâu 5:** được sử dụng cho các địa chỉ nhận trong một ví tiêu chuẩn. Trong phần tiếp theo, chúng ta sẽ xem xét chi tiết hơn về việc tạo ra các cặp khóa con.
 ![image](assets/image/section4/16.webp)
 
-Đối với mỗi lớp độ sâu, chúng ta sử dụng chỉ số để phân biệt các cặp khóa con.
+Đối với mỗi lớp độ sâu, chúng ta sử dụng chỉ mục để phân biệt các cặp khóa con.
 
-Chỉ số không có dấu nháy đơn tương ứng với chỉ số thực tế được sử dụng, trong khi chỉ số có dấu nháy đơn tương ứng với chỉ số thực tế + 2^31. Các phái sinh cứng sử dụng chỉ số từ 2^31 đến 2^32-1. Ví dụ, chỉ số 44' tương ứng với chỉ số thực tế 2^31 + 44.
+Chỉ mục không có dấu nháy đơn tương ứng với chỉ mục thực tế được sử dụng, trong khi chỉ mục có dấu nháy đơn tương ứng với chỉ mục thực tế + 2^31. Các dẫn xuất cứng sử dụng chỉ mục từ 2^31 đến 2^32-1. Ví dụ, chỉ mục 44' tương ứng với chỉ mục thực tế 2^31 + 44.
 
-Để tạo ra một địa chỉ nhận cụ thể, chúng ta phái sinh một cặp khóa con từ khóa chính và mã chuỗi chính. Sau đó, chúng ta sử dụng chỉ số để phân biệt giữa các cặp khóa con khác nhau ở cùng một độ sâu.
+Để tạo ra một địa chỉ nhận cụ thể, chúng ta dẫn xuất một cặp khóa con từ khóa chính và mã chuỗi chính. Sau đó, chúng ta sử dụng chỉ mục để phân biệt giữa các cặp khóa con khác nhau ở cùng một độ sâu.
 
-Khóa mở rộng, như XPUB, cho phép bạn chia sẻ ví của mình với nhiều người. Đường dẫn phái sinh được sử dụng để phân biệt giữa chuỗi bên ngoài (địa chỉ dự định được chia sẻ) và chuỗi bên trong (địa chỉ thay đổi).
+Các khóa mở rộng, như XPUB, cho phép bạn chia sẻ ví của mình với nhiều người. Đường dẫn xuất được sử dụng để phân biệt giữa chuỗi bên ngoài (địa chỉ dự định được chia sẻ) và chuỗi nội bộ (địa chỉ thay đổi).
 
 Trong chương tiếp theo, chúng ta sẽ nghiên cứu về địa chỉ nhận, lợi ích của việc sử dụng chúng, và các bước liên quan trong việc xây dựng chúng.
 
@@ -697,35 +697,35 @@ Trong chương tiếp theo, chúng ta sẽ nghiên cứu về địa chỉ nhậ
 ## Địa chỉ Bitcoin
 <chapterId>0a887ed8-3424-5a52-98e1-e4b406150475</chapterId>
 
-Trong chương này, chúng ta sẽ khám phá các địa chỉ nhận, đóng vai trò quan trọng trong hệ thống Bitcoin. Chúng cho phép tiền được nhận trong một giao dịch và được tạo ra từ các cặp khóa riêng và khóa công khai. Mặc dù có một loại script gọi là Pay2PublicKey cho phép khóa bitcoin vào một khóa công khai, người dùng thường thích sử dụng địa chỉ nhận thay vì script này.
+Trong chương này, chúng ta sẽ khám phá các địa chỉ nhận, đóng vai trò quan trọng trong hệ thống Bitcoin. Chúng giúp nhận tiền vào một địa chỉ cụ thể được tạo ra từ các cặp khóa riêng tư và khóa công khai. Mặc dù có một loại script gọi là Pay2PublicKey cho phép khóa bitcoin vào một khóa công khai, người dùng thường thích sử dụng địa chỉ nhận thay vì dùng script này.
 
 ![image](assets/image/section5/0.webp)
 
-Khi người nhận muốn nhận bitcoin, họ cung cấp một địa chỉ nhận cho người gửi thay vì khóa công khai của họ. Một địa chỉ thực sự là một băm của khóa công khai, với một định dạng cụ thể. Khóa công khai được phái sinh từ khóa riêng con thông qua các phép toán toán học như cộng điểm và nhân đôi trên đường cong e-líp.
+Khi một người muốn nhận bitcoin, họ cung cấp một địa chỉ nhận cho người gửi thay vì khóa công khai của họ. Một địa chỉ thực sự là một mã băm của khóa công khai, với một định dạng cụ thể. Khóa công khai được dẫn xuất từ khóa riêng con thông qua các phép toán toán học như cộng điểm và nhân đôi trên đường cong e-líp.
 
 ![image](assets/image/section5/1.webp)
 
-Quan trọng là phải lưu ý rằng không thể đảo ngược từ địa chỉ sang khóa công khai, cũng như từ khóa công khai sang khóa riêng. Sử dụng địa chỉ giảm kích thước của thông tin khóa công khai, ban đầu là 512 bit.
+Điều quan trọng cần lưu ý là chúng ta không thể đảo ngược từ địa chỉ sang khóa công khai, cũng như từ khóa công khai sang khóa riêng. Việc sử dụng địa chỉ giúp giảm kích thước của thông tin từ khóa công khai, vốn có kích thức là 512 bit.
 
-Địa chỉ Bitcoin đã được giảm kích thước để thuận tiện sử dụng. Chúng có một mã kiểm tra, cho phép phát hiện lỗi đánh máy và giảm nguy cơ mất bitcoin. Ngược lại, khóa công khai không có mã kiểm tra, nghĩa là lỗi đánh máy có thể dẫn đến mất tiền tương ứng.
+Địa chỉ Bitcoin đã được giảm kích thước để thuận tiện cho quá trình sử dụng. Chúng có một checksum, cho phép phát hiện lỗi đánh máy và giảm nguy cơ mất bitcoin. Ngược lại, khóa công khai không có checksum, nghĩa là một lỗi đánh máy có thể dẫn đến mất tiền.
 
-Địa chỉ cũng cung cấp một lớp bảo mật thứ hai giữa thông tin công khai và riêng tư, làm cho việc kiểm soát khóa riêng trở nên khó khăn hơn.
+Địa chỉ cũng cung cấp một lớp bảo mật thứ hai giữa thông tin công khai và riêng tư, làm cho việc kiểm soát khóa riêng tư trở nên khó khăn hơn.
 
-Rất quan trọng phải nhấn mạnh rằng mỗi địa chỉ chỉ nên được sử dụng một lần. Sử dụng lại cùng một địa chỉ gây ra vấn đề về quyền riêng tư và nên được tránh.
+Điều rất quan trọng phải nhấn mạnh là mỗi địa chỉ chỉ nên được sử dụng một lần. Sử dụng lại cùng một địa chỉ gây ra vấn đề liên quan tới quyền riêng tư và là việc nên tránh.
 
-Các tiền tố khác nhau được sử dụng cho địa chỉ Bitcoin. Ví dụ, BC1Q tương ứng với địa chỉ Segwit V0, BC1P tương ứng với địa chỉ Taproot/Segwit V1, và các tiền tố 1 và 3 được liên kết với địa chỉ Pay2PublicKeyH/Pay2ScriptH (legacy). Trong bài học tiếp theo, chúng ta sẽ giải thích từng bước cách phái sinh một địa chỉ từ một khóa công khai.
+Các tiền tố khác nhau được sử dụng cho địa chỉ Bitcoin. Ví dụ, BC1Q tương ứng với địa chỉ Segwit V0, BC1P tương ứng với địa chỉ Taproot/Segwit V1, và các tiền tố 1 và 3 được liên kết với địa chỉ Pay2PublicKeyH/Pay2ScriptH (legacy). Trong bài học tiếp theo, chúng ta sẽ giải thích từng bước cách dẫn xuất một địa chỉ từ một khóa công khai.
 
 ## Làm thế nào để tạo một địa chỉ Bitcoin?
 <chapterId>6dee7bf3-7767-5f8d-a01b-659b95cfe0a5</chapterId>
 
-Trong chương này, chúng ta sẽ thảo luận về việc xây dựng một địa chỉ nhận cho các giao dịch Bitcoin. Một địa chỉ nhận là một biểu diễn chữ và số của một khóa công khai nén. Việc chuyển đổi một khóa công khai thành một địa chỉ nhận bao gồm nhiều bước.
+Trong chương này, chúng ta sẽ thảo luận về cách tạo ra một địa chỉ nhận cho các giao dịch Bitcoin. Một địa chỉ nhận là một chuỗi ký tự bao gồm chữ cái và chữ số đại diện cho một khóa công khai đã được nén. Quá trình chuyển đổi một khóa công khai thành một địa chỉ nhận bao gồm nhiều bước.
 
 ### Bước 1: Nén khóa công khai
 
 ![image](assets/image/section5/14.webp)
 
-Một địa chỉ được phái sinh từ một khóa công khai con.
-Một khóa công khai là một điểm trên đường cong e-líp. Nhờ vào tính đối xứng của đường cong e-líp, một điểm trên đường cong e-líp sẽ có một tọa độ x liên kết với chỉ hai giá trị có thể có của y: dương hoặc âm. Tuy nhiên, trong giao thức Bitcoin, chúng ta làm việc với một tập hợp hữu hạn các số nguyên dương thay vì với tập hợp các số thực. Để phân biệt giữa hai giá trị có thể có của y, chỉ cần chỉ ra liệu y là chẵn hay lẻ.
+Một địa chỉ được dẫn xuất từ một khóa công khai con.
+Một khóa công khai là một điểm trên đường cong e-líp. Nhờ vào tính đối xứng của đường cong e-líp, một điểm trên đường cong e-líp sẽ có một tọa độ x liên kết với chỉ hai giá trị có thể có của y: dương hoặc âm. Tuy nhiên, trong giao thức Bitcoin, chúng ta làm việc với một tập hợp hữu hạn các số nguyên dương thay vì với tập hợp các số thực. Để phân biệt giữa hai giá trị có thể có của y, chỉ cần chỉ ra y là chẵn hay lẻ.
 
 Việc nén một khóa công khai giảm kích thước của nó từ 520 bit xuống còn 264 bit.
 
@@ -735,21 +735,21 @@ Chúng ta sử dụng tiền tố 0x02 cho y chẵn và 0x03 cho y lẻ. Đây l
 
 ![image](assets/image/section5/3.webp)
 
-Việc băm khóa công khai đã nén được thực hiện bằng hàm SHA256. Sau đó, hàm RIPEMD160 được áp dụng lên kết quả băm.
+Việc băm khóa công khai đã nén được thực hiện bằng hàm SHA256. Sau đó, hàm RIPEMD160 được sử dụng để lên kết quả băm.
 
-### Bước 3: Payload = Payload địa chỉ
+### Bước 3: Tạo payload = payload của địa chỉ
 
 ![image](assets/image/section5/4.webp)
 
 Kết quả băm nhị phân của RIPEMD160(SHA256(K)) được sử dụng để tạo thành các nhóm 5 bit. Mỗi nhóm được chuyển đổi thành cơ số 16 (Hexadecimal) và/hoặc cơ số 10.
 
-### Bước 4: Thêm metadata để tính toán checksum với chương trình BCH
+### Bước 4: Thêm siêu dữ liệu để tính toán checksum với chương trình BCH
 
 ![image](assets/image/section5/5.webp)
 
-Trong trường hợp của các địa chỉ legacy, chúng ta sử dụng băm SHA256 kép để tạo ra checksum của địa chỉ. Tuy nhiên, đối với các địa chỉ Segwit V0 và V1, chúng ta dựa vào công nghệ checksum BCH để đảm bảo phát hiện lỗi. Chương trình BCH có khả năng đề xuất và sửa chữa lỗi với xác suất lỗi cực kỳ thấp. Hiện tại, chương trình BCH được sử dụng để phát hiện và đề xuất các sửa đổi cần thực hiện, nhưng nó không tự động thực hiện chúng thay mặt người dùng.
+Trong trường hợp của các địa chỉ legacy, chúng ta sử dụng hàm băm kép SHA256 để tạo ra checksum của địa chỉ. Tuy nhiên, đối với các địa chỉ Segwit V0 và V1, chúng ta dựa vào công nghệ checksum BCH để đảm bảo phát hiện lỗi. Chương trình BCH có khả năng đề xuất và sửa chữa lỗi với xác suất lỗi cực kỳ thấp. Hiện tại, chương trình BCH được sử dụng để phát hiện và đề xuất các sửa đổi cần thực hiện, nhưng nó không tự động thực hiện thay người dùng.
 
-Chương trình BCH yêu cầu nhiều thông tin đầu vào, bao gồm HRP (Human Readable Part) cần được mở rộng. Việc mở rộng HRP bao gồm việc mã hóa mỗi chữ cái theo cơ số 2 dựa trên mã ASCII của chúng. Sau đó, lấy 3 bit đầu tiên của kết quả cho mỗi chữ cái và chuyển đổi chúng sang cơ số 10 (màu xanh trong hình). Chèn một dấu phân cách 0. Sau đó nối tiếp 5 bit của mỗi chữ cái đã được chuyển đổi sang cơ số 10 trước đó (màu vàng trong hình).
+Chương trình BCH yêu cầu nhiều thông tin đầu vào, bao gồm HRP (Human Readable Part) cần được mở rộng. Việc mở rộng HRP bao gồm việc mã hóa mỗi chữ cái theo cơ số 2 dựa trên mã ASCII của chúng. Sau đó, lấy 3 bit đầu tiên của kết quả từ mỗi ký tự và chuyển đổi chúng sang cơ số 10 (màu xanh trong hình). Chèn một ký tự phân cách 0. Sau đó nối tiếp 5 bit của mỗi ký tự đã được chuyển đổi sang cơ số 10 trước đó (màu vàng trong hình).
 
 Việc mở rộng HRP sang cơ số 10 cho phép tách biệt 5 bit cuối cùng của mỗi ký tự, do đó tăng cường checksum.
 
@@ -759,15 +759,15 @@ Phiên bản Segwit V0 được biểu diễn bằng mã 00 và "payload" đư�
 
 ![image](assets/image/section5/6.webp)
 
-Dữ liệu đầu vào chứa metadata sau đó được gửi đến chương trình BCH để nhận checksum trong cơ số 10.
+Thông tin đầu vào chứa siêu dữ liệu sau đó được gửi đến chương trình BCH để lấy checksum trong cơ số 10.
 
 Đây là checksum.
 
-### Bước 6: Xây dựng địa chỉ và chuyển đổi sang Bech32
+### Bước 6: Tạo ra địa chỉ và chuyển đổi sang Bech32
 
 ![image](assets/image/section5/7.webp)
 
-Việc nối liền phiên bản, payload và checksum cho phép xây dựng địa chỉ. Các ký tự cơ số 10 sau đó được chuyển đổi thành ký tự Bech32 sử dụng bảng tương ứng. Bảng chữ cái Bech32 bao gồm tất cả các ký tự chữ và số, trừ 1, b, i, và o, để tránh bất kỳ sự nhầm lẫn nào.
+Việc nối liền phiên bản, payload và checksum sẽ tạo ra địa chỉ. Các ký tự cơ số 10 sau đó được chuyển đổi thành ký tự Bech32 thông qua một bảng đối chiếu. Bảng chữ cái Bech32 bao gồm tất cả các ký tự chữ và số, trừ 1, b, i, và o, để tránh nhầm lẫn
 
 ### Bước 7: Thêm HRP và dấu phân cách
 
@@ -780,31 +780,33 @@ Mọi thứ đều được chuyển đổi thành Bech32, sau đó thêm 'bc' c
 # Tiếp tục
 <partId>58111408-b734-54db-9ea7-0d5b67f99f99</partId>
 
-## Tạo một seed từ 128 lần lắc xúc xắc!
+## Tạo một hạt giống từ 128 lần tung xúc xắc!
 <chapterId>0f4d40a7-cf0e-5faf-bc4d-691486771ac1</chapterId>
 
-Việc tạo ra một cụm từ ghi nhớ là bước quan trọng trong việc bảo vệ ví tiền mã hóa của bạn. Có một số phương pháp để tạo ra cụm từ ghi nhớ, tuy nhiên, chúng ta sẽ tập trung vào phương pháp tạo ra thủ công sử dụng xúc xắc. Quan trọng là phải lưu ý rằng phương pháp này không phù hợp cho ví có giá trị cao. Được khuyến nghị sử dụng phần mềm mã nguồn mở hoặc ví cứng để tạo ra cụm từ ghi nhớ. Để tạo ra một cụm từ ghi nhớ, chúng ta sẽ sử dụng xúc xắc để tạo ra thông tin nhị phân. Mục tiêu là hiểu quy trình tạo ra cụm từ ghi nhớ.
+Việc tạo ra một cụm từ ghi nhớ là bước quan trọng để bảo vệ ví tiền mã hóa của bạn. Có một số phương pháp để tạo ra cụm từ ghi nhớ, tuy nhiên, ở đây, chúng ta sẽ tập trung vào phương pháp thủ công sử dụng xúc xắc. Điều quan trọng là phải lưu ý rằng phương pháp này không phù hợp cho các ví chứa số tiền có giá trị cao. Khi đó, bạn được khuyến nghị sử dụng phần mềm mã nguồn mở hoặc ví cứng để tạo ra cụm từ ghi nhớ. Để tạo ra một cụm từ ghi nhớ, chúng ta sẽ sử dụng xúc xắc để tạo ra thông tin nhị phân. Mục tiêu là hiểu quy trình tạo ra cụm từ ghi nhớ.
 
 **Bước 1 - Chuẩn bị:**
-Đảm bảo bạn có một bản phân phối Linux không lưu trữ, như Tails OS, được cài đặt trên một chiếc USB để tăng cường bảo mật. Lưu ý rằng hướng dẫn này không nên được sử dụng để tạo một ví chính.
+Đảm bảo bạn có một hệ điều hành Linux không lưu trữ thông tin, như Tails OS, được cài đặt trên một chiếc USB để tăng cường bảo mật. Lưu ý rằng hướng dẫn này không nên được sử dụng để tạo một ví chính.
 
 **Bước 2 - Tạo một số nhị phân ngẫu nhiên:**
-Chúng ta sẽ sử dụng xúc xắc để tạo ra thông tin nhị phân. Lắc một con xúc xắc 128 lần và ghi lại từng kết quả (1 cho lẻ, 0 cho chẵn).
+Chúng ta sẽ sử dụng xúc xắc để tạo ra thông tin nhị phân. Tung một con xúc xắc 128 lần và ghi lại từng kết quả (1 cho lẻ, 0 cho chẵn).
 
 **Bước 3 - Sắp xếp các số nhị phân:**
 Sắp xếp các số nhị phân đã thu được thành các hàng 11 chữ số để thuận tiện cho việc tính toán sau này. Hàng thứ mười hai chỉ nên có 7 chữ số.
 
 **Bước 4 - Tính toán checksum:**
-4 chữ số cuối cùng cho hàng thứ mười hai tương ứng với checksum. Để tính checksum này, chúng ta cần sử dụng terminal từ một bản phân phối Linux. Được khuyến nghị sử dụng [TailOs](https://tails.boum.org/index.fr.html), đây là một bản phân phối không lưu trữ có thể khởi động từ USB. Một khi đã ở trên terminal của bạn, nhập lệnh `echo <số nhị phân> | shasum -a 254 -0`. Thay thế `<số nhị phân>` bằng danh sách 128 số không và một của bạn. Đầu ra là một hash hệ thập lục phân. Ghi lại ký tự đầu tiên của hash này và chuyển đổi nó thành nhị phân. Bạn có thể sử dụng [bảng](https://www.educative.io/answers/decimal-binary-and-hex-conversion-table) này để được hỗ trợ. Thêm checksum nhị phân (4 chữ số) vào hàng thứ mười hai của tờ của bạn.
+4 chữ số cuối cùng của hàng thứ mười hai là vị trí tương ứng dành cho checksum. Để tính checksum này, chúng ta cần sử dụng terminal từ một bản phân phối của Linux. Được khuyến nghị sử dụng [TailOs](https://tails.boum.org/index.fr.html), đây là một bản phân phối không lưu trữ có thể khởi động từ USB. Một khi đã ở trên terminal của bạn, nhập lệnh `echo <số nhị phân> | shasum -a 254 -0`. Thay thế `<binary number - số nhị phân>` bằng danh sách 128 số không và một của bạn. Đầu ra là một hash hệ thập lục phân. Ghi lại ký tự đầu tiên của hash này và chuyển đổi nó thành nhị phân. Bạn có thể sử dụng [bảng](https://www.educative.io/answers/decimal-binary-and-hex-conversion-table) này để được hỗ trợ. Thêm checksum ở dạng nhị phân (4 chữ số) vào hàng thứ mười hai trên tờ của bạn.
 
 **Bước 5 - Chuyển đổi sang thập phân:**
-Để tìm các từ tương ứng với mỗi hàng của bạn, trước tiên bạn cần chuyển đổi mỗi chuỗi 11 bit sang thập phân. Tại đây, bạn không thể sử dụng bộ chuyển đổi trực tuyến vì những bit này đại diện cho cụm từ ghi nhớ của bạn. Do đó, bạn sẽ cần chuyển đổi sử dụng máy tính và một mẹo như sau: mỗi bit được liên kết với một lũy thừa của 2, vì vậy từ trái sang phải, chúng ta có 11 bậc tương ứng với 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1. Để chuyển đổi chuỗi 11 bit của bạn sang thập phân, chỉ cần cộng dồn các bậc chứa số 1. Ví dụ, đối với chuỗi 00110111011, điều này tương ứng với phép cộng sau: 256 + 128 + 32 + 16 + 8 + 2 + 1 = 443. Bây giờ bạn có thể chuyển đổi mỗi hàng sang thập phân. Và trước khi chuyển sang mã hóa thành từ, thêm +1 vào tất cả các hàng vì chỉ mục của danh sách từ BIP39 bắt đầu từ 1, không phải 0.
+Để tìm các từ tương ứng với mỗi hàng của bạn, trước tiên bạn cần chuyển đổi mỗi chuỗi 11 bit sang hệ thập phân. Tại đây, bạn không thể sử dụng bộ chuyển đổi trực tuyến vì những bit này đại diện cho cụm từ ghi nhớ của bạn. Do đó, bạn sẽ cần chuyển đổi sử dụng máy tính và một mẹo như sau: mỗi bit được liên kết với một lũy thừa của 2, vì vậy từ trái sang phải, chúng ta có 11 bậc tương ứng với 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1. Để chuyển đổi chuỗi 11 bit của bạn sang thập phân, chỉ cần cộng dồn các bậc chứa số 1. Ví dụ, đối với chuỗi 00110111011, điều này tương ứng với phép cộng sau: 256 + 128 + 32 + 16 + 8 + 2 + 1 = 443. Bây giờ bạn có thể chuyển đổi mỗi hàng sang thập phân. Và trước khi chuyển sang mã hóa thành các từ, thêm +1 vào tất cả các hàng vì chỉ mục của danh sách từ BIP39 bắt đầu từ 1, không phải 0.
 
 **Bước 8 - Tạo ra cụm từ ghi nhớ:**
-Bắt đầu bằng cách in [danh sách 2048 từ](https://seedxor.com/files/wordlist.pdf) để chuyển đổi giữa các số thập phân của bạn và các từ BIP39. Điều đặc biệt của danh sách này là không có từ nào chia sẻ 4 chữ cái đầu tiên với bất kỳ từ nào khác trong từ điển này. Sau đó, tìm kiếm từ được liên kết với mỗi số thập phân của dòng bạn. **Bước 9 - Kiểm tra Cụm từ Ghi nhớ:**
-Ngay lập tức kiểm tra cụm từ ghi nhớ của bạn trên Sparrow Wallet bằng cách tạo một ví từ nó. Nếu bạn nhận được lỗi checksum không hợp lệ, có khả năng bạn đã mắc lỗi tính toán. Sửa lỗi này bằng cách quay lại bước 4 và kiểm tra lại trên Sparrow Wallet. Voilà! Bạn vừa tạo một ví Bitcoin mới từ 128 lần lắc xúc xắc.
+Bắt đầu bằng cách in [danh sách 2048 từ](https://seedxor.com/files/wordlist.pdf) để chuyển đổi giữa các số thập phân của bạn và các từ BIP39. Điều đặc biệt của danh sách này là không có từ nào chia sẻ 4 chữ cái đầu tiên với bất kỳ từ nào khác trong từ điển này. Sau đó, tìm kiếm từ được liên kết với mỗi số thập phân ở mỗi dòng của bạn. 
 
-Tạo ra một cụm từ ghi nhớ là một quá trình quan trọng để bảo mật ví tiền điện tử của bạn. Được khuyến nghị sử dụng các phương pháp an toàn hơn, như sử dụng phần mềm mã nguồn mở hoặc ví cứng, để tạo ra cụm từ ghi nhớ. Tuy nhiên, việc hoàn thành xưởng này giúp hiểu rõ hơn về cách chúng ta có thể tạo một ví Bitcoin từ một số ngẫu nhiên.
+**Bước 9 - Kiểm tra Cụm từ ghi nhớ:**
+Ngay lập tức kiểm tra cụm từ ghi nhớ của bạn trên Sparrow Wallet bằng cách tạo một ví từ nó. Nếu có lỗi checksum không hợp lệ, có khả năng bạn đã mắc lỗi tính toán. Sửa lỗi này bằng cách quay lại bước 4 và kiểm tra lại trên Sparrow Wallet. Vậy là bạn vừa tạo một ví Bitcoin mới từ 128 lần tung xúc xắc.
+
+Tạo ra một cụm từ ghi nhớ là một việc quan trọng để bảo mật ví tiền điện tử của bạn. Được khuyến nghị sử dụng các phương pháp an toàn hơn, như sử dụng phần mềm mã nguồn mở hoặc ví cứng, để tạo ra cụm từ ghi nhớ. Tuy nhiên, việc hoàn thành bài tập thực tế này sẽ giúp bạn hiểu rõ hơn về cách chúng ta có thể tạo một ví Bitcoin từ một số ngẫu nhiên.
 
 ## BONUS: Phỏng vấn với Théo Pantamis
 <chapterId>39f0ec5a-e258-55cb-9789-bc46d314d816</chapterId>
@@ -824,16 +826,16 @@ Một phương pháp mã hóa khác được sử dụng rộng rãi trên giao 
 
 ### Cảm ơn và tiếp tục khám phá hố thỏ
 
-Chúng tôi xin chân thành cảm ơn bạn đã hoàn thành khóa học Crypto 301. Chúng tôi hy vọng trải nghiệm này đã mang lại cho bạn sự phong phú và giáo dục. Chúng tôi đã đề cập đến nhiều chủ đề thú vị, từ toán học đến mã hóa học đến cách thức hoạt động của giao thức Bitcoin.
+Chúng tôi xin chân thành cảm ơn bạn đã hoàn thành khóa học Crypto 201. Chúng tôi hy vọng trải nghiệm này đã giúp bạn mở rộng kiến thức và học hỏi thêm nhiều điều hữu ích. Chúng tôi đã đề cập đến nhiều chủ đề thú vị, từ toán học đến mật mã học đến cách thức hoạt động của giao thức Bitcoin.
 
-Nếu bạn muốn tìm hiểu sâu hơn về chủ đề, chúng tôi có một tài nguyên bổ sung để cung cấp cho bạn. Chúng tôi đã thực hiện một cuộc phỏng vấn độc quyền với Théo Pantamis và Loïc Morel, hai chuyên gia nổi tiếng trong lĩnh vực mã hóa học. Cuộc phỏng vấn này khám phá các khía cạnh sâu rộng của chủ đề và cung cấp các góc nhìn thú vị.
+Nếu bạn muốn tìm hiểu sâu hơn về chủ đề, chúng tôi có một nguồn tài nguyên bổ sung để cung cấp cho bạn. Chúng tôi đã thực hiện một cuộc phỏng vấn độc quyền với Théo Pantamis và Loïc Morel, hai chuyên gia nổi tiếng trong lĩnh vực mật mã học. Cuộc phỏng vấn này khám phá các khía cạnh sâu rộng của chủ đề và cung cấp các góc nhìn thú vị.
 
-Hãy thoải mái xem cuộc phỏng vấn này để tiếp tục khám phá lĩnh vực mã hóa học hấp dẫn. Chúng tôi hy vọng nó sẽ hữu ích và truyền cảm hứng cho hành trình của bạn. Một lần nữa, cảm ơn bạn đã tham gia và cam kết suốt khóa học này.
+Hãy xem cuộc phỏng vấn này để tiếp tục khám phá lĩnh vực mật mã học hấp dẫn. Chúng tôi hy vọng nó sẽ hữu ích và truyền cảm hứng cho hành trình của bạn. Một lần nữa, cảm ơn bạn đã tham gia và cam kết suốt khóa học này.
 
-### Hỗ trợ Chúng Tôi
+### Hỗ trợ chúng tôi
 
 Khóa học này, cùng với tất cả nội dung trên trường đại học này, đã được cung cấp miễn phí cho bạn bởi cộng đồng của chúng tôi. Để hỗ trợ chúng tôi, bạn có thể chia sẻ nó với người khác, trở thành thành viên của trường đại học, và thậm chí đóng góp vào sự phát triển của nó qua GitHub. Thay mặt cho toàn bộ đội ngũ, cảm ơn bạn!
 
 ### Đánh giá khóa học
 
-Một hệ thống đánh giá cho việc đào tạo sẽ sớm được tích hợp vào nền tảng E-learning mới này! Trong thời gian chờ đợi, cảm ơn rất nhiều vì đã tham gia khóa học, và nếu bạn thích nó, xin hãy xem xét chia sẻ nó với người khác.
+Hệ thống đánh giá khoá học sẽ sớm được tích hợp vào nền tảng E-learning mới này! Trong thời gian chờ đợi, cảm ơn rất nhiều vì đã tham gia khóa học, và nếu bạn thích nó, vui lòng chia sẻ nó với người khác.
