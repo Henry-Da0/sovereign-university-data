@@ -148,20 +148,101 @@ Nền tảng của Bitcoin trong **phong trào Cypherpunk** và **Kinh tế họ
 
 Cảm ơn bạn đã theo dõi tài liệu này!
 
-## Làm thế nào Bitcoin
+## Hiểu về Bitcoin
 <chapterId>d800970a-0d8e-5557-810a-7aef845d4a34</chapterId>
 
-### Ngăn xếp Công nghệ của Bitcoin
+### Nền tảng công nghệ của Bitcoin
 
 ![video](https://youtu.be/5UkjQomJsHU)
-Trong bài giảng đầu tiên của khóa học 'Hiểu về Bitcoin', chúng tôi đã bắt đầu khám phá công nghệ nền tảng hỗ trợ mạng lưới Bitcoin. Chúng tôi đã đề cập đến một loạt các chủ đề, bao gồm Hashcash, giao dịch, blockchain, Lightning Network và các thành phần chính khác của giao thức Bitcoin.
-### Ngăn Xếp Công Nghệ của Bitcoin
+Trong bài giảng đầu tiên của phần học 'Hiểu về Bitcoin', chúng ta đã bắt đầu khám phá nền tảng công nghệ hỗ trợ mạng lưới Bitcoin. Chúng ta đã đề cập đến một loạt các chủ đề, bao gồm **Hashcash, giao dịch, blockchain, Lightning Network** và các thành phần chính khác của giao thức Bitcoin.
+### Nền tảng công Nghệ của Bitcoin - Phần 2
 
 ![video](https://youtu.be/UkwbPVhLeIk)
-Trong bài giảng thứ hai của 'Hiểu về Bitcoin', chúng tôi đã tiến hành kiểm tra sâu hơn về ngăn xếp công nghệ của Bitcoin.
+Trong bài giảng thứ hai của 'Hiểu về Bitcoin', chúng ta đã đi sâu hơn vào nền tảng công nghệ của Bitcoin.
 
-## Phá Bỏ Bitcoin
+### Cấu trúc của Bitcoin
+
+Nguồn gốc của Bitcoin dựa trên một số đổi mới quan trọng, bắt đầu từ **Hashcash của Adam Back**, một hệ thống bằng chứng công việc (PoW) được thiết kế để ngăn chặn thư rác và các cuộc tấn công từ chối dịch vụ bằng cách yêu cầu người gửi thực hiện các nhiệm vụ tính toán. Khái niệm PoW này trở thành nền tảng của bảo mật Bitcoin.
+
+Bitcoin sử dụng **chữ ký số** với mật mã **đường cong e-líp** để bảo vệ và xác minh các giao dịch. **Thuật toán chữ ký số đường cong e-líp (ECDSA)** đảm bảo chỉ chủ sở hữu hợp pháp mới có thể thực hiện giao dịch mà không tiết lộ khóa riêng của họ.
+
+**Satoshi Nakamoto**, người sáng lập ẩn danh của Bitcoin, đã mở rộng những ý tưởng này bằng cách chuyển đổi mô hình PoW sang một **blockchain** phi tập trung. Điều này cho phép một mạng lưới các nút phân tán xác thực và ghi lại các giao dịch mà không cần một thực thể tập trung, đánh dấu một bước tiến lớn so với các thử nghiệm tiền kỹ thuật số trước đó.
+
+> **Định nghĩa:**
+>
+> - _Bằng chứng công việc - Proof-of-Work (PoW):_ Hệ thống trong đó các thành viên phải giải các câu đố tính toán để xác thực giao dịch và bảo vệ mạng lưới.
+> - _Mã hoá đường cong e-líp:_ Phương pháp mã hóa cho phép tạo chữ ký số an toàn và hiệu quả.
+
+### Cơ chế hoạt động của blockchain và xác thực giao dịch
+
+Các giao dịch Bitcoin được xác thực và thêm vào các khối bởi các **thợ đào**, những người cạnh tranh với nhau để giải câu đố mật mã thông qua thuật toán PoW. Điều này bao gồm việc tìm kiếm một giá trị băm được bắt đầu với một số lượng số không nhất định bằng cách điều chỉnh giá trị **nonce** cho đến khi tìm thấy mã băm phù hợp.
+
+Mỗi khối trong blockchain bao gồm một **header** (chứa dữ liệu như băm của khối trước đó) và danh sách các giao dịch. Khối đầu tiên, được gọi là **Khối Khởi Nguyên (Genesis Block)**, là độc nhất vì nó không gắn vào một khối nào trước đó cả.
+
+![Image](assets/en/1/6.webp)
+
+Trước khi các giao dịch được đưa vào một khối, chúng tồn tại trong **mempool**, nơi chúng chờ được xác nhận. Sau khi được xác nhận, các giao dịch này sẽ được thêm vào khối mới được đào và do đó là được thêm vào blockchain.
+
+> **Định nghĩa:**
+>
+> - _Đào:_ Quá trình giải các câu đố mật mã để thêm các khối mới vào blockchain.
+> - _Nonce:_ Giá trị được sử dụng để tìm mã băm chính xác trong quá trình đào.
+> - _Mempool:_ Khu vực chờ cho các giao dịch chưa được xác nhận trước khi được thêm vào một khối.
+
+### Khả năng mở rộng, quyền riêng tư, và phát triển trong Bitcoin
+
+Bitcoin đối mặt với các thách thức liên quan đến khả năng mở rộng và quyền riêng tư. Khả năng xử lý giao dịch giới hạn của chuỗi khối gây khó khăn trong việc xử lý khối lượng giao dịch lớn. Các giải pháp như **Lightning Network** giải quyết vấn đề này bằng cách cho phép thực hiện các giao dịch ngoài chuỗi thông qua các kênh thanh toán, giúp tăng tốc độ và bảo vệ quyền riêng tư.
+
+Chạy một **nút đầy đủ (full-node)** là lựa chọn rất quan trọng để đảm bảo tính phi tập trung và bảo mật, nhưng các nút **Xác minh thanh toán đơn giản (SPV)** cho phép chúng ta tham gia dễ dàng hơn nhưng mất đi một phần bảo mật.
+
+Sự phát triển của Bitcoin nhằm cải thiện hiệu suất và bảo mật. Các nâng cấp chính bao gồm **Segregated Witness (SegWit)**, giải quyết khả năng sửa đổi giao dịch và tăng kích thước khối hiệu quả, và **Taproot**, cải thiện quyền riêng tư và cho phép các hợp đồng phức tạp hơn thông qua **Cây cú pháp trừu tượng dạng Merkle (MAST)**.
+
+> **Định nghĩa:**
+>
+> - _SegWit:_  Là một bản nâng cấp của Bitcoin nhằm tách dữ liệu chữ ký khỏi dữ liệu giao dịch, nâng cao hiệu quả của mạng lưới.
+> - _Taproot:_ Là một bản nâng cấp nhằm tăng cường quyền riêng tư và khả năng mở rộng của Bitcoin bằng cách cho phép các hợp đồng thông minh phức tạp hơn.
+> - _Lightning Network:_ Là một giải pháp lớp thứ hai cho phép thực hiện các giao dịch Bitcoin nhanh hơn, rẻ hơn thông qua các kênh thanh toán.
+
+#### Kết luận
+
+Cấu trúc và sự phát triển liên tục của Bitcoin thể hiện sự đổi mới và khả năng thích ứng của công nghệ này. Từ **Hashcash** đến một blockchain phi tập trung, từ **SegWit** đến **Taproot**, Bitcoin tiếp tục giải quyết những thách thức về khả năng mở rộng, quyền riêng tư và bảo mật. Những nỗ lực không ngừng của cộng đồng đảm bảo rằng Bitcoin vẫn bền vững và phi tập trung trong khi được phát triển để đáp ứng nhu cầu của tương lai.
+
+## Phản biện về Bitcoin
 <chapterId>171ec71d-3028-5820-9b4f-36682113fc81</chapterId>
+
+### Phản biện về Bitcoin
+
+![video](https://youtu.be/f0Pf0u1y5F4)
+
+Trong bài giảng này, chúng ta sẽ phản biện các quan niệm sai lầm phổ biến xung quanh **Bitcoin, blockchain và tiền mã hóa**. Chúng ta sẽ làm rõ các hiểu lầm về tiêu thụ năng lượng của Bitcoin, việc sử dụng Bitcoin cho mục đích phạm pháp và những thông tin gây "FUD" (sợ hãi, bất an, nghi ngờ) xung quanh công nghệ này.
+
+### Bitcoin và Blockchain
+
+Một hiểu lầm phổ biến là Bitcoin và chuỗi khối là một. Trong khi Bitcoin là một loại tiền kỹ thuật số, chuỗi khối là công nghệ nền tảng của nó. Chuỗi khối cung cấp một bản ghi giao dịch được xác minh, nhưng đi kèm với các hạn chế như tốc độ chậm hơn và chi phí cao hơn mà các giải pháp như Lightning Network có thể giải quyết.
+A frequent misconception is that **Bitcoin** and **blockchain** are the same. While Bitcoin is a digital currency, **blockchain** is the technology that powers it. Blockchains provide a verified record of transactions but come with trade-offs like slower speeds and higher costs, which solutions like the **Lightning Network** address.
+
+> **Definitions:**
+>
+> - _Blockchain:_ The underlying technology used to record transactions in a decentralized, immutable ledger.
+> - _Lightning Network:_ A second-layer solution that improves Bitcoin's transaction efficiency by enabling off-chain transactions.
+
+### Bitcoin vs. Crypto
+
+Another key distinction is that **Bitcoin** was created with the sole purpose of providing a decentralized, censorship-resistant form of money, free from control by any company or government. In contrast, cryptocurrencies **shitcoins** are often designed with centralized control, primarily existing to enrich the companies behind them through predatory practices, pump-and-dump schemes, or outright scams. These tokens typically serve no genuine purpose beyond making a quick profit for their creators at the expense of uninformed investors. Bitcoin, however, stands alone as the only truly decentralized digital currency with a proven track record of security and resilience.
+
+> **Definitions:**
+>
+> - _Shitcoins:_ Shitcoins are low-value or questionable quality cryptocurrencies that lack real utility. They are often highly speculative and are sometimes created for fraudulent purposes or without a clear purpose, taking advantage of the cryptocurrency market boom.
+
+![Image](assets/en/1/2.webp)
+
+### Energy Consumption and Environmental Impact
+
+One of the most common criticisms of Bitcoin is its **energy consumption**. While Bitcoin mining does use energy, it accounts for less than 1% of global electricity consumption and less than 3% of wasted energy. Moreover, **Bitcoin mining** often taps into unused or renewable energy sources, making it greener than often portrayed.
+
+> **Definitions:**
+>
+> - _Bitcoin Mining:_ The process of validating transactions and securing the network by solving cryptographic puzzles, which requires computational power.
 
 ### Cắt Bỏ FUD
 
