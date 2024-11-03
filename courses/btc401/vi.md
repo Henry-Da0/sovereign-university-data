@@ -218,41 +218,457 @@ Trong bài giảng này, chúng ta sẽ phản biện các quan niệm sai lầm
 
 ### Bitcoin và Blockchain
 
-Một hiểu lầm phổ biến là Bitcoin và chuỗi khối là một. Trong khi Bitcoin là một loại tiền kỹ thuật số, chuỗi khối là công nghệ nền tảng của nó. Chuỗi khối cung cấp một bản ghi giao dịch được xác minh, nhưng đi kèm với các hạn chế như tốc độ chậm hơn và chi phí cao hơn mà các giải pháp như Lightning Network có thể giải quyết.
-A frequent misconception is that **Bitcoin** and **blockchain** are the same. While Bitcoin is a digital currency, **blockchain** is the technology that powers it. Blockchains provide a verified record of transactions but come with trade-offs like slower speeds and higher costs, which solutions like the **Lightning Network** address.
+Một hiểu lầm phổ biến là **Bitcoin** và **blockchain** là một. Trong khi bitcoin là một loại tiền kỹ thuật số, blockchain là công nghệ nền tảng của nó. Bl cung cấp một bản ghi giao dịch được xác minh, nhưng đi kèm với các hạn chế như tốc độ chậm hơn và chi phí cao hơn mà các giải pháp như **Lightning Network** có thể giải quyết.
 
-> **Definitions:**
+> **Định nghĩa:**
 >
-> - _Blockchain:_ The underlying technology used to record transactions in a decentralized, immutable ledger.
-> - _Lightning Network:_ A second-layer solution that improves Bitcoin's transaction efficiency by enabling off-chain transactions.
+> - _Blockchain:_ Công nghệ nền tảng được sử dụng để ghi lại các giao dịch trong một cuốn sổ cái phi tập trung, bất biến.
+> - _Lightning Network:_ Giải pháp lớp thứ hai cải thiện hiệu quả giao dịch của Bitcoin bằng cách cho phép giao dịch ngoài chuỗi.
 
-### Bitcoin vs. Crypto
+### Bitcoin và Crypto
 
-Another key distinction is that **Bitcoin** was created with the sole purpose of providing a decentralized, censorship-resistant form of money, free from control by any company or government. In contrast, cryptocurrencies **shitcoins** are often designed with centralized control, primarily existing to enrich the companies behind them through predatory practices, pump-and-dump schemes, or outright scams. These tokens typically serve no genuine purpose beyond making a quick profit for their creators at the expense of uninformed investors. Bitcoin, however, stands alone as the only truly decentralized digital currency with a proven track record of security and resilience.
+Một điểm khác biệt quan trọng khác là **Bitcoin** được tạo ra với mục đích duy nhất là cung cấp một dạng tiền tệ phi tập trung, kháng kiểm duyệt, không bị kiểm soát bởi bất kỳ công ty hay chính phủ nào. Ngược lại, các loại tiền mã hóa **shitcoins** thường được thiết kế với quyền kiểm soát tập trung, chủ yếu để làm giàu cho các công ty đứng sau thông qua các hoạt động gian lận, thao túng giá hoặc các trò lừa đảo công khai. Các token này thường không có mục đích thực sự ngoài việc mang lại lợi nhuận nhanh chóng cho những người tạo ra chúng, gây hại cho các nhà đầu tư thiếu hiểu biết. Bitcoin vẫn là đồng tiền kỹ thuật số phi tập trung duy nhất có lịch sử về bảo mật và tính bền vững đã được chứng minh.
 
-> **Definitions:**
+> **Định nghĩa:**
 >
-> - _Shitcoins:_ Shitcoins are low-value or questionable quality cryptocurrencies that lack real utility. They are often highly speculative and are sometimes created for fraudulent purposes or without a clear purpose, taking advantage of the cryptocurrency market boom.
+> - _Shitcoins:_ Các loại tiền mã hóa có giá trị thấp hoặc chất lượng đáng ngờ, thiếu tính ứng dụng thực tế. Chúng thường có tính đầu cơ cao và đôi khi được tạo ra với mục đích gian lận hoặc không có mục đích rõ ràng, tận dụng sự bùng nổ của thị trường tiền mã hóa.
 
 ![Image](assets/en/1/2.webp)
 
-### Energy Consumption and Environmental Impact
+### Tiêu thụ năng lượng và tác động tới môi trường
 
-One of the most common criticisms of Bitcoin is its **energy consumption**. While Bitcoin mining does use energy, it accounts for less than 1% of global electricity consumption and less than 3% of wasted energy. Moreover, **Bitcoin mining** often taps into unused or renewable energy sources, making it greener than often portrayed.
+Một trong những chỉ trích phổ biến nhất đối với Bitcoin là mạng lưới này **tiêu thụ năng lượng**. Mặc dù việc khai thác Bitcoin tiêu tốn năng lượng, nhưng nó chỉ chiếm chưa đến 1% tổng mức tiêu thụ điện toàn cầu và chưa đến 3% nguồn năng lượng bị lãng phí. Hơn nữa, **hoạt động đào Bitcoin** thường sử dụng các nguồn năng lượng tái tạo hoặc năng lượng không được sử dụng đến, làm cho nó thân thiện với môi trường hơn so với nhận định thường thấy.
 
-> **Definitions:**
+> **Định nghĩa:**
 >
-> - _Bitcoin Mining:_ The process of validating transactions and securing the network by solving cryptographic puzzles, which requires computational power.
+> - _Đào Bitcoin:_ Quá trình xác thực các giao dịch và bảo vệ mạng lưới thông qua việc giải các câu đố mật mã, đòi hỏi sức mạnh tính toán.
 
-### Cắt Bỏ FUD
+### Hiểu lần về việc sử dụng Bitcoin trong các hoạt động phạm pháp
 
-![video](https://youtu.be/f0Pf0u1y5F4)
+Bitcoin thường bị chỉ trích vì được sử dụng trong các hoạt động phạm pháp. Tuy nhiên, các phân tích trên blockchain cho thấy chỉ có một tỷ lệ nhỏ giao dịch Bitcoin liên quan đến tội phạm. Trên thực tế, các hệ thống tài chính truyền thống có tỷ lệ được sử dụng vào mục đích phạm pháp cao hơn nhiều so với Bitcoin.
 
-Phá bỏ blockchain và shitcoin và Phá bỏ những hiểu lầm và quan niệm sai lầm về việc lãng phí năng lượng của Bitcoin, và việc sử dụng cho mục đích tội phạm
+### Quyền riêng tư và tính dễ đổi lẫn
+
+**Quyền riêng tư** và **tính dễ đổi lẫn** là những đặc điểm thiết yếu của Bitcoin. Quyền riêng tư bảo vệ người dùng ở các chế độ áp bức, trong khi tính dễ đổi lẫn đảm bảo rằng mỗi Bitcoin đều có giá trị như nhau, bất kể lịch sử của nó. Điều này làm cho Bitcoin trở thành một dạng tiền tệ đáng tin cậy và công bằng.
+
+> **Định nghĩa:**
+>
+> - _Tính dễ đổi lẫn:_ Tính chất của tiền tệ, khi mỗi đơn vị có thể thay thế bằng một đơn vị khác và có giá trị ngang nhau.
+
+### Xử lý FUD và động lực thị trường
+
+FUD (sợ hãi, bất an, nghi ngờ) xung quanh Bitcoin thường phóng đại các lo ngại về tác động môi trường, sử dụng trong các hoạt động tội phạm và khả năng bảo mật. Mặc dù sẽ có những biến động trên thị trường, công nghệ phi tập trung và ổn định của Bitcoin cung cấp nền tảng vững chắc cho sự ổn định lâu dài và tự do về mặt tài chính, đặc biệt ở những nơi bị hạn chế như Venezuela.
+
+#### Kết luận
+
+Hiểu được thực tế về việc tiêu thụ năng lượng, tính năng bảo mật và vai trò của Bitcoin trong việc phòng chống tội phạm giúp xóa bỏ những hiểu lầm xung quanh nó. Bằng cách vượt qua FUD, chúng ta có thể nhận ra tiềm năng của Bitcoin như một hình thái tiền tệ bền vững mang tính cách mạng, thúc đẩy quyền riêng tư, an toàn và phi tập trung.
+
 
 ## Vận Hành Bitcoin
-<chapterId>5f638ec9-a6c1-5716-b27f-d837ab896eb1</chapterId>
 
+<chapterId>5f638ec9-a6c1-5716-b27f-d837ab896eb1</chapterId>
+<professor>radio-talent</professor>
+
+### Cài đặt Bitcoin Core
+
+![Video](https://youtu.be/fIUU2sRCEj0)
+
+Trong bài học đầu tiên của mô-đun thứ tư, chúng ta đã tìm hiểu về kiến trúc của Bitcoin và cách cài đặt một nút Bitcoin Core.
+
+### Chạy một nút Bitcoin
+
+**1. Giới thiệu**
+Chào mừng trở lại! Trong phần trước, chúng ta đã đề cập đến các khái niệm cơ bản về kiến trúc của Bitcoin, bao gồm các nền tảng mã hóa và cấu trúc mạng ngang hàng. Hôm nay, chúng ta sẽ chuyển từ lý thuyết sang thực hành bằng cách hướng dẫn cài đặt và cấu hình một nút Bitcoin.
+
+**2. Tổng quan buổi thực hành**
+Trong buổi học này, Alekos sẽ hướng dẫn chi tiết cách thiết lập một nút Bitcoin bằng cách sử dụng máy ảo. Bài học thực hành này sẽ giúp bạn làm quen với các bước cấu hình nút để tham gia vào mạng lưới Bitcoin.
+
+Chạy một nút Bitcoin bao gồm việc xác thực các giao dịch và các khối, áp dụng các quy tắc đồng thuận và đảm bảo tính phi tập trung của mạng lưới. Thiết lập một nút giúp bạn có kết nối trực tiếp với mạng lưới Bitcoin, cho phép bạn đóng góp vào việc đảm bảo an ninh và tính toàn vẹn của mạng.
+
+Trong bài giảng này, bạn sẽ tìm thấy hướng dẫn để cài đặt và chạy một nút Bitcoin Core của riêng mình, học cách cắt tỉa blockchain để tiết kiệm dung lượng, và bắt đầu trải nghiệm với phần mềm. Alekos sẽ hướng dẫn bạn từng bước qua quá trình thú vị này.
+
+### Những gì bạn có thể làm với Bitcoin Core và lợi ích của nó
+
+Khi chạy Bitcoin Core, bạn có thể:
+- **Xác thực giao dịch và khối của riêng bạn:** Đảm bảo rằng các quy tắc của mạng Bitcoin được tuân thủ mà không cần dựa vào bên thứ ba.
+- **Củng cố mạng lưới:** Bằng cách tham gia vào mạng, bạn góp phần duy trìn tính phi tập trung của nó, làm cho Bitcoin trở nên bền vững hơn trước các cuộc tấn công.
+- **Cắt tỉa blockchain:** Giảm yêu cầu lưu trữ bằng cách chỉ giữ lại các giao dịch mới nhất, rất hữu ích nếu bạn có dung lượng bộ nhớ hạn chế.
+- **Sử dụng các tính năng ví nâng cao:** Quản lý Bitcoin của bạn với tính bảo mật và riêng tư, tạo khóa riêng tư offline và ký giao dịch an toàn.
+- **Kết nối trực tiếp với mạng lưới Bitcoin:** Sử dụng Bitcoin Core cho phép bạn kết nối trực tiếp với mạng lưới mà không cần thông qua trung gian, đảm bảo bạn nhận được dữ liệu chính xác nhất.
+- **Hưởng lợi từ tính riêng tư tăng cường:** Là một nhà vận hành nút đầy đủ, bạn không cần tin tưởng vào các dịch vụ bên ngoài, bảo vệ quyền riêng tư của các giao dịch khỏi sự giám sát từ bên ngoài.
+
+Việc chạy một nút Bitcoin mang lại nhiều lợi ích cho bất kỳ người dùng Bitcoin nào. Không chỉ giúp bảo vệ và củng cố tính phi tập trung của mạng lưới, mà bạn còn cải thiện quyền riêng tư của mình, đảm bảo tính toàn vẹn cho giao dịch của bản thân và tham gia tích cực vào hệ sinh thái Bitcoin. Chạy một nút là một bước quan trọng để đạt được sự tự chủ tài chính và tận hưởng trọn vẹn bản chất phi tập trung của Bitcoin.
+
+### Các lệnh cơ bản
+
+Dưới đây là một số lệnh cơ bản để cấu hình cho nút của bạn:
+
+- **Kiểm tra trạng thái của Bitcoin daemon**:
+
+  ```bash
+  sudo systemctl status bitcoind
+  ```
+
+- **Khởi động Bitcoin daemon:**:
+
+  ```bash
+    systemctl start bitcoind
+  ```
+
+- **Dừng Bitcoin daemon:**:
+
+  ```bash
+    sudo systemctl stop bitcoind
+  ```
+
+  - **Lấy thông tin chi tiết**:
+
+  ```bash
+    bitcoin-cli getblockchaininfo
+  ```
+
+- **Cắt tỉa blockchain để tiết kiệm dung lượng bằng cách giữ lại các khối mới nhất**:
+
+  ```bash
+    prune=550
+  ```
+
+- **Bật máy chủ Bitcoin Core và cấu hình các thiết lập RPC:**
+
+  ```bash
+    server=1
+    rpcuser=yourusername
+    rpcpassword=yourpassword
+  ```
+
+- **Kiểm tra trạng thái của Bitcoin daemon**:
+
+  ```bash
+  sudo systemctl status bitcoind
+  ```
+
+- **Kiểm tra số dư của ví Bitcoin:**:
+  ```bash
+    sudo systemctl status bitcoind
+  ```
+
+### Cài đặt C-lightning
+
+![video](https://youtu.be/zrB1Kc4BqvY)
+
+#### 1. **Tóm tắt về Bitcoin Core**
+
+Bắt đầu với một bản tóm tắt nhanh về các bước cài đặt Bitcoin Core trên máy ảo đám mây, vì điều này rất quan trọng cho việc thiết lập C-Lightning tiếp theo.
+
+**Cài lại Bitcoin Core trên máy ảo đám mây**
+Đầu tiên, bạn sẽ cần cài lại Bitcoin Core trên máy ảo của mình. Trong phiên này, chúng ta sẽ bỏ qua việc xác minh tệp nhị phân để tiết kiệm thời gian, nhưng lưu ý rằng trong môi trường làm việc thực, việc xác minh các tệp nhị phân là một bước quan trọng để đảm bảo sự an toàn.
+
+**Tải xuống và xác minh hash của tệp**
+Đầu tiên, tải phiên bản mới nhất của Bitcoin Core và xác minh hash của tệp để đảm bảo không có sự can thiệp nào.
+
+```sh
+wget https://bitcoin.org/bin/bitcoin-core-22.0/bitcoin-22.0-x86_64-linux-gnu.tar.gz
+sha256sum bitcoin-22.0-x86_64-linux-gnu.tar.gz
+# So sánh hash đầu ra với hash chính thức
+```
+
+**Cài đặt tệp nhị phân và Cấu hình Tự khởi động với systemd**
+Tiếp theo, cài đặt tệp nhị phân và thiết lập để tự động khởi động bằng systemd.
+
+```sh
+tar -xzf bitcoin-22.0-x86_64-linux-gnu.tar.gz
+sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-22.0/bin/*
+```
+
+**Tạo tệp dịch vụ systemd:**
+
+```sh
+sudo nano /etc/systemd/system/bitcoind.service
+```
+
+**Thêm cấu hình:**
+
+```ini
+[Unit]
+Description=Bitcoin daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/bitcoind -daemon
+User=bitcoin
+Group=bitcoin
+Type=forking
+PIDFile=/var/lib/bitcoind/bitcoind.pid
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+
+**Tạo và Cấu hình người dùng Bitcoin và Thư mục**
+Tạo một người dùng riêng và thiết lập thư mục cho Bitcoin Core.
+
+```sh
+sudo adduser --disabled-login --gecos "" bitcoin
+sudo mkdir -p /var/lib/bitcoind
+sudo chown bitcoin:bitcoin /var/lib/bitcoind
+```
+
+**Tiết kiệm dung lượng bộ nhớ bằng cách cắt tỉa Blockchain**
+Để tiết kiệm dung lượng đĩa, bật chế độ cắt tỉa trong tệp cấu hình.
+
+```sh
+sudo nano /var/lib/bitcoind/bitcoin.conf
+```
+
+Thêm các dòng sau:
+
+```ini
+prune=550
+```
+
+Với các bước này, bạn sẽ có Bitcoin Core chạy với dung lượng bộ nhớ tối thiểu và sẵn sàng tương tác với C-Lightning.
+
+#### 2. **Tổng quan và cài đặt C-Lightning**
+
+**Tổng quan về C-Lightning**
+
+C-Lightning, còn được gọi là Core-Lightning, là một giao thức Layer 2 cho phép thực hiện các giao dịch nhanh hơn và rẻ hơn thông qua các kênh ngoài chuỗi. Nó nổi bật nhờ thiết kế theo kiểu mô-đun và thân thiện với các nhà phát triển, cho phép tùy biến sâu rộng qua các plugin.
+
+**Tầm quan trọng của tính mô-đun hoá và khả năng mở rộng với các plugin**
+Thiết kế mô-đun của C-Lightning cho phép bạn dễ dàng thêm hoặc loại bỏ các tính năng theo nhu cầu, giúp hệ thống phù hợp với các trường hợp sử dụng cụ thể. Các trường hợp sử dụng bao gồm:
+
+- **Xử lý thanh toán:** Các plugin tùy chỉnh có thể xử lý các điều kiện thanh toán cụ thể.
+- **Phí định tuyến:** Điều chỉnh phí định tuyến dựa trên điều kiện của mạng lưới.
+- **Tự động hóa:** Tự động hóa các tác vụ như quản lý kênh và cung cấp thanh khoản.
+
+### Cài đặt C-Lightning
+
+Hãy chuyển sang phần cài đặt C-Lightning.
+
+**Sử dụng phiên bản ổn định mới nhất**
+Trong bài giảng này, chúng ta sẽ sử dụng phiên bản ổn định mới nhất, ví dụ: 22.11.1.
+
+```sh
+wget https://github.com/ElementsProject/lightning/releases/download/v22.11.1/clightning-v22.11.1.tar.gz
+sha256sum clightning-v22.11.1.tar.gz
+# Xác minh hash với hash chính thức đã được cung cấp
+```
+
+**Xác minh tính toàn vẹn với các khoá GPG**
+Luôn xác minh tính toàn vẹn của tệp đã tải về bằng các khoá GPG.
+
+```sh
+gpg --recv-keys <developer-key-id>
+gpg --verify clightning-v22.11.1.tar.gz.asc clightning-v22.11.1.tar.gz
+```
+
+**Cài đặt các thư viện cần thiết và biên dịch từ mã nguồn**
+Cài đặt các thư viện cần thiết và biên dịch C-Lightning từ mã nguồn.
+
+```sh
+sudo apt-get update
+sudo apt-get install -y autoconf automake build-essential git libtool libgmp-dev \
+                        libsqlite3-dev python3 python3-mako net-tools zlib1g-dev
+tar -xzf clightning-v22.11.1.tar.gz
+cd clightning-v22.11.1
+./configure
+make
+sudo make install
+```
+
+**Cấu hình dịch vụ systemd cho Khởi động tự động**
+Tạo một tệp dịch vụ systemd cho C-Lightning:
+
+```sh
+sudo nano /etc/systemd/system/lightningd.service
+```
+
+Thêm cấu hình sau:
+
+```ini
+[Unit]
+Description=C-Lightning daemon
+After=network.target bitcoind.service
+
+[Service]
+ExecStart=/usr/local/bin/lightningd
+User=bitcoin
+Group=bitcoin
+Type=simple
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+
+#### 3. **Cấu hình và thiết lập**
+
+**Tạo các thư mục và tệp cấu hình cần thiết**
+Tạo các thư mục và tệp cấu hình cần thiết cho C-Lightning.
+
+```sh
+sudo mkdir -p /var/lib/lightning
+sudo chown bitcoin:bitcoin /var/lib/lightning
+sudo -u bitcoin nano /var/lib/lightning/config
+```
+
+Thêm các dòng sau vào tệp cấu hình:
+
+```ini
+network=testnet
+log-level=debug
+plugin=/usr/local/libexec/c-lightning/plugins
+```
+
+**Cấu hình C-Lightning để kết nối với Bitcoin Core trên Testnet**
+Đảm bảo rằng C-Lightning có thể kết nối với Bitcoin Core bằng cách thêm các dòng sau:
+
+```ini
+bitcoin-datadir=/var/lib/bitcoind
+bitcoin-rpcuser=<rpcusername>
+bitcoin-rpcpassword=<rpcpassword>
+```
+
+**Đảm bảo tương thích và đồng bộ hoá**
+Khởi động các dịch vụ và đảm bảo rằng chúng tương thích và được đồng bộ hóa.
+
+```sh
+sudo systemctl start bitcoind
+sudo systemctl start lightningd
+sudo systemctl enable bitcoind
+sudo systemctl enable lightningd
+```
+
+**Thiết lập đường dẫn và quyền truy cập, đặc biệt cho tích hợp Tor**
+Cấu hình đường dẫn và quyền truy cập để đảm bảo hoạt động mượt mà, đặc biệt khi sử dụng Tor để bảo vệ quyền riêng tư.
+
+```sh
+sudo apt-get install tor
+sudo -u bitcoin nano /var/lib/lightning/config
+```
+
+Thêm cấu hình sau để tích hợp Tor:
+
+```ini
+proxy=127.0.0.1:9050
+```
+
+**Sao lưu HSM Secret để phục hồi quỹ**
+Sao lưu HSM secret để có thể phục hồi quỹ.
+
+```sh
+sudo cp /var/lib/lightning/hsm_secret /path/to/secure/location
+```
+
+**Kiểm tra kết nối và xác nhận trạng thái hoạt động của nút**
+Cuối cùng, xác nhận trạng thái hoạt động của nút của bạn bằng cách kiểm tra kết nối và đảm bảo mọi thứ hoạt động như mong đợi.
+
+```sh
+lightning-cli getinfo
+```
+
+Với các bước trên, bạn sẽ có một thiết lập C-Lightning đầy đủ chức năng được kết nối với nút Bitcoin Core của mình, sẵn sàng cho các giao dịch trên testnet.
+
+#### Kết luận & Câu hỏi
+
+Tóm lại, hôm nay chúng ta đã nắm được các bước cần thiết để cài lại Bitcoin Core, sau đó là hướng dẫn chi tiết về cách cài đặt và cấu hình C-Lightning. Nếu bạn có câu hỏi nào, hãy nêu lên ngay hoặc chuẩn bị để làm rõ trong buổi học tiếp theo. Việc thực hành là rất quan trọng, vì vậy hãy sử dụng cài đặt Testnet mà chúng ta đã thảo luận để hiểu sâu hơn.
+
+### Bảo mật và Thiết bị phần cứng
+
+![video](https://youtu.be/oVaI9WuLkgk)
+
+### Thiết bị Specter và Ledger
+
+#### Giới thiệu
+
+Chào mừng bạn đến với bài giảng về bảo mật và thiết lập thiết bị cho Bitcoin. Hôm nay, chúng ta sẽ tập trung vào việc hiểu cách sử dụng các công cụ bảo mật, đặc biệt là ví Specter trên máy tính và ví phần cứng Ledger, cùng cách cấu hình chúng hiệu quả để tăng cường bảo mật cho Bitcoin.
+
+**Các công cụ: Ví Desktop Specter và Mô phỏng Ledger**
+
+Specter là ví trên máy tính được thiết kế để hỗ trợ tạo và quản lý các ví Bitcoin, đặc biệt là các ví sử dụng thiết bị phần cứng. Trong bài giảng này, chúng ta sẽ sử dụng một mô phỏng Ledger để tái tạo chức năng của ví phần cứng Ledger.
+
+**Sự khác biệt giữa thiết bị Ledger và các tranh cãi về công ty Ledger**
+
+Thiết bị Ledger là ví phần cứng nổi tiếng với tính bảo mật cao. Tuy nhiên, công ty Ledger từng gây tranh cãi do những vấn đề về quyền riêng tư của dữ liệu người dùng. Hiểu rõ sự khác biệt giữa bảo mật của thiết bị và thực tiễn của công ty là điều cần thiết để sử dụng một cách thông minh.
+
+**Các mô hình bảo mật: Tầm quan trọng của ví đa chữ ký và thiết bị phần cứng**
+
+Một yếu tố quan trọng của bảo mật Bitcoin là sử dụng ví đa chữ ký (multi-sig). Ví đa chữ ký yêu cầu nhiều khóa riêng tư để phê duyệt giao dịch, giúp tăng cường bảo mật. Ngoài ra, việc sử dụng các loại ví phần cứng khác nhau giúp phân tán rủi ro và tăng cường mô hình bảo mật.
+
+### Thiết lập và cấu hình
+
+**Tải xuống và thiết lập Specter**
+
+Bước đầu tiên trong quá trình thiết lập là tải Specter từ trang chính thức. Hãy xác minh tính toàn vẹn của tệp tải về để tránh phần mềm bị giả mạo. Sau khi tải, cài đặt Specter trên máy tính và chạy ứng dụng.
+
+**Cấu hình Specter để kết nối với Bitcoin Core hoặc các máy chủ Electrum**
+
+Để cấu hình Specter, bạn cần kết nối nó với Bitcoin Core hoặc máy chủ Electrum. Những máy chủ này cung cấp dữ liệu blockchain cần thiết cho các thao tác ví. Quá trình cấu hình bao gồm thiết lập địa chỉ máy chủ trong cài đặt của Specter và đảm bảo kết nối ổn định.
+
+**Giải thích đường dẫn xuất và phục hồi khoá công khai**
+
+Hiểu rõ về đường dẫn dẫn xuất rất quan trọng trong quản lý ví. Đường dẫn dẫn xuất xác định cách các khóa được tạo ra từ một khóa chính. Trong Specter, bạn có thể lấy khóa công khai bằng cách kết nối ví phần cứng (hoặc mô phỏng) và duyệt qua giao diện ví. Hãy ghi chép lại các đường dẫn này để sử dụng sau này.
+
+**Biểu diễn thực tế: Sử dụng bản mô phỏng Ledger**
+
+Chúng ta sẽ sử dụng mô phỏng Ledger để lấy các khóa. Điều này bao gồm kết nối mô phỏng với Specter, chuyển đến phần quản lý khóa và chọn các khóa thích hợp để tạo ví.
+
+**Tạo và quản lý ví trọng Specter**
+
+Rất dễ để tạo ví trong Specter. Truy cập giao diện tạo ví, nhập thông tin cần thiết và thêm các khóa công khai đã lấy. Khi đã tạo xong, bạn có thể quản lý ví, theo dõi các giao dịch và thực hiện các biện pháp bảo mật mạnh mẽ.
+
+**Nhận và theo dõi các giao dịch**
+
+Sau khi thiết lập ví, để nhận bitcoin, bạn chỉ cần đơn giản là chia sẻ địa chỉ ví của mình. Specter cung cấp tính năng theo dõi thời gian thực của các giao dịch đến, giúp bạn luôn cập nhật tình trạng ví của mình.
+
+### Cấu hình nâng cao
+
+**Thiết lập Specter Daemon từ xa**
+
+Đối với người dùng nâng cao, việc thiết lập Specter Daemon từ xa có thể tăng cường khả năng truy cập và bảo mật. Điều này bao gồm cấu hình một máy chủ từ xa để chạy nền tảng Specter, cho phép truy cập an toàn từ các thiết bị khác nhau.
+
+**Kích hoạt Tor để tăng cường quyền riêng tư**
+
+Để tăng cường quyền riêng tư, nên cấu hình Specter sử dụng Tor. Tor ẩn danh lưu lượng mạng của bạn, bảo vệ địa chỉ IP của bạn khỏi sự giám sát tiềm năng. Điều này đặc biệt quan trọng với những người dùng quan tâm đến quyền riêng tư và bảo mật.
+
+**Kết nối từ xa với các nút một cách an toàn**
+
+Khi kết nối với các nút từ xa, hãy đảm bảo kết nối được bảo mật. Điều này bao gồm sử dụng chứng chỉ SSL/TLS và xác minh tính xác thực của nút. Kết nối bảo mật giúp ngăn chặn các cuộc tấn công xen giữa (man-in-the-middle) và đảm bảo tính toàn vẹn của dữ liệu.
+
+**Khắc phục sự cố: Kỹ thuật thực hành**
+
+Encountering issues is inevitable. Practical debugging involves checking user permissions, verifying data directory access, and consulting logs for errors. For example, ensure Specter has the necessary permissions to access the Bitcoin Core data directory to avoid operational disruptions.
+
+**Example Issue: Data Directory Access**
+
+A common issue is incorrect data directory access. Verify that the path to your Bitcoin Core data directory is correctly set in Specter's configuration. This ensures Specter has access to the necessary blockchain data for wallet operations.
+
+**Next Steps and Integration**
+
+As we conclude, the next steps involve integrating Specter with the Lightning network. This enables sending funds from Specter to a Lightning node, facilitating faster and cheaper transactions. Future lessons will cover this integration in detail, enhancing your Bitcoin transaction capabilities.
+
+**Block Timing Variability**
+
+Understanding block timing variability is crucial. Bitcoin blocks can be mined at varying intervals, affecting transaction confirmation times. This variability must be accounted for in all configurations and wallet operations.
+
+**Learning Resources**
+
+For additional learning, consider resources like "Mastering the Lightning Network" and Rusty Russell's tutorials. These materials provide in-depth knowledge on Lightning nodes and advanced Bitcoin configurations.
+
+**Node Installation and Tor Security**
+
+Installing nodes, whether locally or remotely, benefits from using Tor for enhanced security. Running your own node ensures personal transaction validation, improving security and privacy.
+
+**Philosophy: Self-Sufficiency in Learning**
+
+Embrace a philosophy of self-sufficiency. Practical skills and self-learning are paramount, often surpassing formal education's benefits. Engage in hands-on practices to deepen your understanding of Bitcoin security.
+
+**Privacy Considerations**
+
+Maintain privacy by avoiding services that track or log transactions. Anonymity is crucial for secure Bitcoin operations, and careful service selection helps protect your identity and transaction history.
+
+This concludes our lecture on security and device setup for Bitcoin using Specter and Ledger. Feel free to ask any questions or seek clarification on any points discussed.
 ### Cài Đặt Bitcoin Core
 
 ![Video](https://youtu.be/fIUU2sRCEj0)
